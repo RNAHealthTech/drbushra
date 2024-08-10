@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useNavigate, useNavigation } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -77,6 +77,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={`font-work-sans-slab sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isSticky ? 'bg-background shadow-md' : 'bg-transparent'}`}>
+   
       <div className="container mx-auto px-4">
         <nav className="flex flex-wrap justify-between items-center">
           <Link to="/" className="flex items-center">

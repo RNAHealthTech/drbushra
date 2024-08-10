@@ -1,14 +1,15 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import FAQItem from '../components/FAQItem';
 import ServicesPreview from '../services/ServicesPreview';
 import { Helmet } from 'react-helmet';
+import AppointmentModal from '../components/AppointmentModal';
 
 
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
-interface Card {
+interface Cardprops {
   title: string;
   image: string;
   content: string;
@@ -16,7 +17,7 @@ interface Card {
 
 const Map = lazy(() => import('../map/index'));
 
-const cards: Record<CardKey, Card> = {
+const cards: Record<CardKey, Cardprops> = {
   mentalHealth: {
     title: 'Mental Health',
     image: '/images/counseling.jpg',
@@ -36,7 +37,7 @@ const cards: Record<CardKey, Card> = {
 
 
 interface CardProps {
-  card: Card;
+  card: Cardprops;
 }
 
 const Card: React.FC<CardProps> = ({ card }) => {
@@ -93,9 +94,13 @@ const Card: React.FC<CardProps> = ({ card }) => {
 };
 
 const Home: React.FC = () => {
+  
   const [activeCard, setActiveCard] = useState<CardKey>('mentalHealth');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const navigate = useNavigate();
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false); 
+  const navigate = useNavigate()
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -126,10 +131,12 @@ const Home: React.FC = () => {
               <p className="font-work-sans text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-5 md:mb-6 max-w-xl">
                 Our goal is to provide a safe, comfortable, and warm environment so that you can openly discuss your mental health needs.
               </p>
-              <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white">
+              <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white"
+               onClick={openModal}>
                 <img src="/images/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-full mr-2" />
                 Book a Consultation Session
               </button>
+              <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
             </div>
           </div>
         </section>

@@ -6,7 +6,8 @@ import { ServiceCard } from "../pages/Services";
 
 const ServicesPreview: React.FC = () => {
     const navigate = useNavigate();
-    const [currentIndex, setCurrentIndex] = useState(0);
+   
+    const [currentIndex, setCurrentIndex] = useState(4);
     const [selectedService, setSelectedService] = useState(Object.entries(servicesData)[9]);
 
     const serviceEntries = Object.entries(servicesData);
