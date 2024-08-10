@@ -32,6 +32,13 @@ const Contact: React.FC = () => {
     console.log(state);
 
     return (
+      <>
+      <Helmet>
+  <title>Contact Dr. Bushra Zahoor | Mind Craft Neuro-Psychiatry Clinic</title>
+  <meta name="description" content="Get in touch with Dr. Bushra Zahoor, a highly qualified psychiatrist in Delhi. Schedule appointments at Mind Craft Neuro-Psychiatry Clinic in Nizamuddin, Delhi NCR." />
+  <meta name="keywords" content="Dr. Bushra Zahoor, contact, appointment, psychiatrist Delhi, Mind Craft Neuro-Psychiatry Clinic, Nizamuddin, Delhi NCR" />
+</Helmet>
+
         <main className="flex-grow px-6 py-8">
             <section className="mb-12 flex justify-center">
                 <motion.div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
@@ -190,6 +197,7 @@ const Contact: React.FC = () => {
             </section>
 
         </main>
+        </>
     )
 }
 

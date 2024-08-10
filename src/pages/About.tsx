@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import ResearchSection from "../components/AboutMore";
-
+import { Helmet } from "react-helmet";
 
 const About: React.FC = () => {
     
@@ -11,6 +11,12 @@ const About: React.FC = () => {
     },[]);
 
     return (
+        <>
+        <Helmet>
+  <title>About Dr. Bushra Zahoor | Gold Medalist MBBS, Psychiatrist</title>
+  <meta name="description" content="Learn about Dr. Bushra Zahoor, a Gold Medalist MBBS and Assistant Professor of Psychiatry. Expertise in MBBS, MD (Psychiatry), and DNB (Psychiatry) at Mind Craft Neuro-Psychiatry Clinic." />
+  <meta name="keywords" content="Dr. Bushra Zahoor, psychiatrist, Gold Medalist MBBS, MD Psychiatry, DNB Psychiatry, Assistant Professor, Mind Craft Neuro-Psychiatry Clinic" />
+</Helmet>
         <main className="flex-grow px-6 py-12 bg-background rounded-lg">
             <section className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -103,6 +109,7 @@ const About: React.FC = () => {
  
 
         </main>
+        </>
     )
 }
 

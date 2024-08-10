@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 interface ServiceCardProps {
     title: string;
@@ -93,6 +94,12 @@ const Services: React.FC = () => {
 
 
     return (
+        <>
+        <Helmet>
+  <title>Mental Health Services | Dr. Bushra Zahoor's Specialties</title>
+  <meta name="description" content="Comprehensive mental health services by Dr. Bushra Zahoor. Specializing in women's mental health, child and adolescent care, anxiety, depression, and more at Mind Craft Neuro-Psychiatry Clinic." />
+  <meta name="keywords" content="mental health services, women's mental health, child psychiatry, adolescent mental health, anxiety, depression, psychosis, counseling, psychotherapy, Dr. Bushra Zahoor" />
+</Helmet>
         <main className="flex-grow px-6 py-8">
             <section className="mb-12 flex justify-center">
                 <div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
@@ -125,6 +132,7 @@ const Services: React.FC = () => {
             </div>
         </section>
         </main>
+        </>
     )
 }
 
