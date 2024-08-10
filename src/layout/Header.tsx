@@ -139,7 +139,7 @@ const Header: React.FC = () => {
                 )}
               </div>
               <div className="mt-auto p-4">
-                <button className="w-full bg-accent text-foreground px-6 py-2 rounded hover:bg-accent-dark transition-colors text-lg font-semibold">
+                <button className="w-full bg-accent text-foreground px-6 py-2 rounded-lg hover:bg-accent-dark transition-colors text-lg font-semibold">
                   Contact
                 </button>
               </div>
