@@ -46,9 +46,7 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
 
   const services = [
     { name: "Headache & Migraine", path: "/services/headache-migraine" },
@@ -84,7 +82,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center">
             <img src="/images/logo.png" alt="Dr. Bushra Zahoor"
               className={`transition-all duration-300 ${isScrolled
-                  ? 'h-16 w-26 md:h-12 md:w-24 lg:h-16 lg:w-42'
+                  ? 'h-16 w-26 md:h-12 md:w-24 lg:h-16 lg:w-32'
                   : 'h-20 w-30 md:h-16 md:w-32 lg:h-20 lg:w-52'
                 }`} />
           </Link>
@@ -168,7 +166,7 @@ const Header: React.FC = () => {
                       <Link
                         key={service.path}
                         to={service.path}
-                        className="block px-4 py-2 text-zinc-600 text-sm hover:bg-orange-200 hover:text-zinc-900"
+                        className="block px-4 py-2 text-zinc-500 text-md font-semibold hover:bg-orange-200 hover:text-zinc-900"
                         role="menuitem"
                       >
                         {service.name}
@@ -181,7 +179,7 @@ const Header: React.FC = () => {
           </div>
 
           <div className="hidden md:block">
-            <button className="bg-accent text-foreground px-6 py-2 rounded hover:bg-accent-dark transition-colors text-lg font-semibold">
+            <button className="bg-buttonish text-foreground px-6 py-2 rounded hover:bg-accent-dark transition-colors text-lg font-semibold">
               <NavLink to='/contact'>Contact</NavLink>
             </button>
           </div>

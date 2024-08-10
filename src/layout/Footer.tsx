@@ -51,12 +51,12 @@
 // export default Footer;
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhone, FaEnvelope } from  "react-icons/fa";
-import {motion} from 'framer-motion';
+import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
-  
-  
+
+
   const currentYear = new Date().getFullYear();
   const [isMobile, setIsMobile] = useState(false);
 
@@ -72,13 +72,13 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer className="bg-foreground text-background py-12 px-6 rounded-lg shadow-md">
+    <footer className="bg-foreground text-background py-12 px-6 rounded-t-[40px] shadow-md">
       <motion.div className={`container mx-auto ${isMobile ? 'flex flex-col h-[70vh]' : ''}`}>
         <motion.div className={`${isMobile ? 'flex-shrink-0' : ''}`}>
           <h3 className="font-fraunces text-2xl mb-4">Dr. Bushra Zahoor</h3>
           <p className="font-work-sans-slab text-sm mb-4">MBBS(Gold Medalist), MD, DNB, Psychiatry</p>
           <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
-         
+
         </motion.div>
 
         <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''

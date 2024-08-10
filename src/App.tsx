@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import ServiceTemplatePage from './services/ServiceTemplatePage';
 
 import './index.css';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path='/services/:serviceId' Component={ServiceTemplatePage} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
