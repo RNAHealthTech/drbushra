@@ -1,95 +1,124 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from 'framer-motion';
+
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { useForm, ValidationError } from '@formspree/react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
- 
+
+// add this import for the marker icon
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+import { useForm, ValidationError } from '@formspree/react';
 import { Helmet } from 'react-helmet';
-import Map from "../map";
+
+
+
+
+
+// Create a custom icon
+const customIcon = L.icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28],
+  shadowSize: [41, 41]
+});
+
+
 
 
 const Contact: React.FC = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
- 
-    const mapRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    //eslint-disable-next-line
+  }, [])
 
 
-    const scrollToMap = () => {
-        mapRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+  const position: [number, number] = [28.589456190439, 77.24568595637429]; 
+  const mapRef = useRef<HTMLDivElement>(null);
 
-    const scrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.scrollIntoView({ behavior: "smooth" });
-        }
+
+  const scrollToMap = () => {
+    mapRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToForm = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth" });
     }
+  }
 
-    const [state, handleSubmit] = useForm('xblrdjdp');
-    console.log(state);
+  const [state, handleSubmit] = useForm('xblrdjdp');
+  console.log(state);
 
-    return (
-      <>
+  return (
+    <>
       <Helmet>
-  <title>Contact Dr. Bushra Zahoor | Mind Craft Neuro-Psychiatry Clinic</title>
-  <meta name="description" content="Get in touch with Dr. Bushra Zahoor, a highly qualified psychiatrist in Delhi. Schedule appointments at Mind Craft Neuro-Psychiatry Clinic in Nizamuddin, Delhi NCR." />
-  <meta name="keywords" content="Dr. Bushra Zahoor, contact, appointment, psychiatrist Delhi, Mind Craft Neuro-Psychiatry Clinic, Nizamuddin, Delhi NCR" />
-</Helmet>
+        <title>Contact Dr. Bushra Zahoor | Mind Craft Neuro-Psychiatry Clinic</title>
+        <meta name="description" content="Get in touch with Dr. Bushra Zahoor, a highly qualified psychiatrist in Delhi. Schedule appointments at Mind Craft Neuro-Psychiatry Clinic in Nizamuddin, Delhi NCR." />
+        <meta name="keywords" content="Dr. Bushra Zahoor, contact, appointment, psychiatrist Delhi, Mind Craft Neuro-Psychiatry Clinic, Nizamuddin, Delhi NCR" />
+      </Helmet>
 
-        <main className="flex-grow px-6 py-8">
-            <section className="mb-12 flex justify-center">
-                <motion.div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
-                    <img
-                        src="/images/contact-hero.jpg"
-                        alt="Hero"
-                        className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[600px] object-cover"
-                    />
-                    <motion.div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-center  px-4 sm:px-8 md:px-12 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
-                        <h1 className="font-fraunces-slab text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
-                            <span className="text-yellow-300">Your Mental Health,</span><br />
-                            <span className="text-yellow-300 font-bold">Our Priority</span>
-                        </h1>
+      <main className="flex-grow px-6 py-8">
+        <section className="mb-12 flex justify-center">
+          <motion.div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
+            <img
+              src="/images/contact-hero.jpg"
+              alt="Hero"
+              className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[600px] object-cover"
+            />
+            <motion.div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-center  px-4 sm:px-8 md:px-12 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+              <h1 className="font-fraunces-slab text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
+                <span className="text-yellow-300">Your Mental Health,</span><br />
+                <span className="text-yellow-300 font-bold">Our Priority</span>
+              </h1>
 
-                        <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white">
-                            <img src="/images/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-full mr-2" />
-                            Reach Out Today!
-                        </button>
-                    </motion.div>
-                </motion.div>
-            </section>
-            <section className="contact-info py-24">
-                <motion.div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-16 text-gray-800">Contact Dr. Bushra Zahoor</h2>
-                    <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                        <ContactItem
-                            icon={<FaMapMarkerAlt className="text-blue-500" />}
-                            title="Address"
-                            content="E-20, basement, Block E,
+              <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white" onClick={scrollToForm}>
+                <img src="/images/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-full mr-2" />
+                Reach Out Today!
+              </button>
+            </motion.div>
+          </motion.div>
+        </section>
+        <section className="contact-info py-24">
+          <motion.div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-16 text-gray-800">Contact Dr. Bushra Zahoor</h2>
+            <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <ContactItem
+                icon={<FaMapMarkerAlt className="text-blue-500" />}
+                title="Address"
+                content="E-20, basement, Block E,
                             Nizamuddin West, New Delhi, Delhi-110013"
-                            gradientClass="from-cardish to-peacher"
-                            action={scrollToMap}
-                        />
-                        <ContactItem
-                            icon={<FaPhone className="text-green-500" />}
-                            title="Phone"
-                            content="+91-9717288672"
-                            gradientClass="from-cardish to-peacher"
-                            action={() => window.location.href = 'tel:+919717288672'}
-                        />
-                        <ContactItem
-                            icon={<FaEnvelope className="text-purple-500" />}
-                            title="Email"
-                            content="bushra.zhr07@gmail.com"
-                            gradientClass="from-cardish to-peacher"
-                            action={() => window.location.href = 'mailto:bushra.zhr07@gmail.com'}
-                        />
-                    </motion.div>
-                </motion.div>
-            </section>
-            <section id="contact-form" className="contact-form py-20">
+                gradientClass="from-cardish to-peacher"
+                action={scrollToMap}
+              />
+              <ContactItem
+                icon={<FaPhone className="text-green-500" />}
+                title="Phone"
+                content="+91-9717288672"
+                gradientClass="from-cardish to-peacher"
+                action={() => window.location.href = 'tel:+919717288672'}
+              />
+              <ContactItem
+                icon={<FaEnvelope className="text-purple-500" />}
+                title="Email"
+                content="bushra.zhr07@gmail.com"
+                gradientClass="from-cardish to-peacher"
+                action={() => window.location.href = 'mailto:bushra.zhr07@gmail.com'}
+              />
+            </motion.div>
+          </motion.div>
+        </section>
+        <section id="contact-form" className="contact-form py-20">
           <motion.div className="container mx-auto px-4">
             <motion.div className="max-w-6xl mx-auto">
               <motion.div className="flex flex-col lg:flex-row items-center">
@@ -187,43 +216,53 @@ const Contact: React.FC = () => {
           </motion.div>
         </section>
 
-            <section ref={mapRef} className="map-section py-10">
-                <motion.div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-center">Our Location</h2>
-                  
-                         <Map />
-                  
-                </motion.div>
-            </section>
+        <section ref={mapRef} className="map-section py-10">
+          <motion.div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 text-center">Our Location</h2>
+            <motion.div className="h-96 rounded-lg overflow-hidden shadow-lg">
+              <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%' }}>
+                <TileLayer
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />
+                <Marker position={position} icon={customIcon}>
+                  <Popup>
+                    Mindcraft Neuro-Psychiatry Clinic 
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </motion.div>
+          </motion.div>
+        </section>
 
-        </main>
-        </>
-    )
+      </main>
+    </>
+  )
 }
 
 
 interface ContactCardProps {
-    icon: React.ReactNode;
-    title: string;
-    content: string;
-    gradientClass: string;
-    action: () => void;
+  icon: React.ReactNode;
+  title: string;
+  content: string;
+  gradientClass: string;
+  action: () => void;
 }
 
 const ContactItem: React.FC<ContactCardProps> = ({ icon, title, content, gradientClass, action }) => (
-    <motion.div
-        className={`rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition duration-300 bg-gradient-to-br ${gradientClass} relative overflow-hidden group cursor-pointer`}
-        onClick={action}
-    >
-        <motion.div className="absolute inset-0 bg-white opacity-90 group-hover:opacity-95 transition-opacity duration-300"></motion.div>
-        <motion.div className="relative z-10 flex flex-col items-center justify-center h-full">
-            <motion.div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                {icon}
-            </motion.div>
-            <h3 className="text-2xl font-bold mb-3 text-gray-800">{title}</h3>
-            <p className="text-gray-600 text-lg leading-relaxed max-w-xs mx-auto">{content}</p>
-        </motion.div>
+  <motion.div
+    className={`rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition duration-300 bg-gradient-to-br ${gradientClass} relative overflow-hidden group cursor-pointer`}
+    onClick={action}
+  >
+    <motion.div className="absolute inset-0 bg-white opacity-90 group-hover:opacity-95 transition-opacity duration-300"></motion.div>
+    <motion.div className="relative z-10 flex flex-col items-center justify-center h-full">
+      <motion.div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+        {icon}
+      </motion.div>
+      <h3 className="text-2xl font-bold mb-3 text-gray-800">{title}</h3>
+      <p className="text-gray-600 text-lg leading-relaxed max-w-xs mx-auto">{content}</p>
     </motion.div>
+  </motion.div>
 
 );
 

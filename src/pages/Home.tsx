@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import FAQItem from '../components/FAQItem';
 import ServicesPreview from '../services/ServicesPreview';
-//import Testimonials from '../components/Testimonials';
-import Map from '../map';
 import { Helmet } from 'react-helmet';
+
+
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
@@ -14,6 +14,7 @@ interface Card {
   content: string;
 }
 
+const Map = lazy(() => import('../map/index'));
 
 const cards: Record<CardKey, Card> = {
   mentalHealth: {
@@ -254,7 +255,9 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="w-full lg:w-3/5 h-[500px] lg:h-auto lg:py-16 lg:pr-8">
+            <Suspense fallback={<div>Loading map...</div>}>
               <Map />
+            </Suspense>
             </div>
           </div>
         </section>
