@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import InViewWrapper from './InViewWrapper';
 
 const publications = [
   'Role of Yogic Intervention in the Treatment of Depression from Indian Journal of Ancient Medicine and Yoga',
@@ -48,6 +49,7 @@ const ResearchSection: React.FC = () => {
   return (
 
     <section className="mb-16 bg-peacher rounded-lg p-8 transition-all duration-300 mt-12">
+      <InViewWrapper>
       <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Research & Publications</h2>
 
       {/* Mobile view */}
@@ -83,6 +85,7 @@ const ResearchSection: React.FC = () => {
           </ul>
         </div>
       </div>
+      </InViewWrapper>
     </section>
 
   );

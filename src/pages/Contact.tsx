@@ -13,6 +13,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 import { useForm, ValidationError } from '@formspree/react';
 import { Helmet } from 'react-helmet';
+import InViewWrapper from "../components/InViewWrapper";
 
 
 
@@ -70,6 +71,7 @@ const Contact: React.FC = () => {
 
       <main className="flex-grow px-6 py-8">
         <section className="mb-12 flex justify-center">
+          <InViewWrapper>
           <motion.div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
             <img
               src="/images/contact-hero.jpg"
@@ -88,6 +90,7 @@ const Contact: React.FC = () => {
               </button>
             </motion.div>
           </motion.div>
+          </InViewWrapper>
         </section>
         <section className="contact-info py-24">
           <motion.div className="container mx-auto px-4">
@@ -138,6 +141,7 @@ const Contact: React.FC = () => {
                     </h3>
                   ) : (
                     <motion.div>
+                      <InViewWrapper>
                       <h3 className="text-3xl font-bold mb-8 text-center lg:text-left mt-8 lg:mt-0">Schedule Your Appointment</h3>
 
                       <form onSubmit={handleSubmit} className="space-y-6">
@@ -207,6 +211,7 @@ const Contact: React.FC = () => {
                           Schedule Appointment
                         </button>
                       </form>
+                      </InViewWrapper>
                     </motion.div>)}
                 </motion.div>
 

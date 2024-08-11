@@ -1,9 +1,10 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import { useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import FAQItem from '../components/FAQItem';
 import ServicesPreview from '../services/ServicesPreview';
 import { Helmet } from 'react-helmet';
 import AppointmentModal from '../components/AppointmentModal';
+import InViewWrapper from '../components/InViewWrapper';
 
 
 
@@ -94,12 +95,12 @@ const Card: React.FC<CardProps> = ({ card }) => {
 };
 
 const Home: React.FC = () => {
-  
+
   const [activeCard, setActiveCard] = useState<CardKey>('mentalHealth');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false); 
+  const closeModal = () => setIsModalOpen(false);
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -117,31 +118,34 @@ const Home: React.FC = () => {
       </Helmet>
       <main className="flex-grow px-6 py-8">
         <section className="mb-12 flex justify-center">
-          <div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
-            <img
-              src="/images/hero-home.jpg"
-              alt="Hero"
-              className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[600px] object-cover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-center  px-4 sm:px-8 md:px-12 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
-              <h1 className="font-fraunces-slab text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
-                <span className="text-yellow-300">We care for your</span><br />
-                <span className="text-yellow-300 font-bold">Mental Well-being</span>
-              </h1>
-              <p className="font-work-sans text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-5 md:mb-6 max-w-xl">
-                Our goal is to provide a safe, comfortable, and warm environment so that you can openly discuss your mental health needs.
-              </p>
-              <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white"
-               onClick={openModal}>
-                <img src="/images/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-full mr-2" />
-                Book a Consultation Session
-              </button>
-              <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
+          <InViewWrapper>
+            <div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
+              <img
+                src="/images/hero-home.jpg"
+                alt="Hero"
+                className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[600px] object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center text-center  px-4 sm:px-8 md:px-12 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+                <h1 className="font-fraunces-slab text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
+                  <span className="text-yellow-300">We care for your</span><br />
+                  <span className="text-yellow-300 font-bold">Mental Well-being</span>
+                </h1>
+                <p className="font-work-sans text-sm sm:text-base md:text-lg text-white mb-4 sm:mb-5 md:mb-6 max-w-xl">
+                  Our goal is to provide a safe, comfortable, and warm environment so that you can openly discuss your mental health needs.
+                </p>
+                <button className="bg-white text-zinc-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full flex items-center text-sm sm:text-base transition-colors hover:bg-foreground hover:text-white"
+                  onClick={openModal}>
+                  <img src="/images/avatar.jpg" alt="Avatar" className="w-8 h-8 rounded-full mr-2" />
+                  Book a Consultation Session
+                </button>
+                <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
+              </div>
             </div>
-          </div>
+          </InViewWrapper>
         </section>
 
         <section className='bg-gradient-to-l from-peacher to-orange-100 mb-12 flex flex-col items-center text-center px-6 py-16 lg:px-8'>
+
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-20 text-center text-foreground font-fraunces-slab">Mantra from the Other Side</h2>
             <div className="flex flex-col md:flex-row items-center justify-between">
@@ -156,22 +160,24 @@ const Home: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 text-foreground font-fraunces-slab">Embrace Your Unique Journey with</h3>
                 <h3 className="text-2xl sm:text-3xl md:text-6xl font-semibold mb-4 text-foreground font-fraunces-slab">Dr. Bushra Zahoor</h3>
                 <p className='text-xl lg:text-3xl font-semibold text-new font-work-sans'>MBBS (Gold Medalist),MD, DNB (Psychiatry)</p>
-
-                <blockquote className="border-l-4 border-buttonish pl-4 italic text-gray-600 mb-6">
-                  "In the tapestry of life, your struggles are not flaws, but threads that add depth and character to your unique story. Let's work together to weave a narrative of resilience, growth, and self-discovery." - Dr. Bushra Zahoor
-                </blockquote>
-                <p className="hidden text-lg text-gray-700 mb-6 font-work-sans lg:block">
-                  With over a decade of experience in psychiatry, I'm here to guide you through the complexities of your mind. My approach combines evidence-based practices with compassionate care, tailored to your individual needs.
-                </p>
-                <p className="text-lg text-gray-700 mb-8 font-work-sans">
-                  Whether you're dealing with anxiety, depression, or life transitions, remember: seeking help is not a sign of weakness, but a courageous step towards a brighter future. Let's embark on this healing journey together.
-                </p>
+                <InViewWrapper>
+                  <blockquote className="border-l-4 border-buttonish pl-4 italic text-gray-600 mb-6">
+                    "In the tapestry of life, your struggles are not flaws, but threads that add depth and character to your unique story. Let's work together to weave a narrative of resilience, growth, and self-discovery." - Dr. Bushra Zahoor
+                  </blockquote>
+                  <p className="hidden text-lg text-gray-700 mb-6 font-work-sans lg:block">
+                    With over a decade of experience in psychiatry, I'm here to guide you through the complexities of your mind. My approach combines evidence-based practices with compassionate care, tailored to your individual needs.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-8 font-work-sans">
+                    Whether you're dealing with anxiety, depression, or life transitions, remember: seeking help is not a sign of weakness, but a courageous step towards a brighter future. Let's embark on this healing journey together.
+                  </p>
+                </InViewWrapper>
                 <button onClick={() => navigate("/about")} className="mt-4 mb-6 bg-buttonish text-md text-foreground font-semibold px-6 py-3 rounded-lg">
                   About Dr. Zahoor
                 </button>
               </div>
             </div>
           </div>
+
         </section>
 
         <section className="mb-12 flex flex-col items-center text-center px-6 lg:px-8">
@@ -205,13 +211,15 @@ const Home: React.FC = () => {
 
             </svg>
           </div>
-          <h2 className="font-fraunces-slab text-2xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 max-w-2xl sm:max-w-3xl lg:max-w-4xl leading-tight sm:leading-snug lg:leading-normal">
-            Start your journey towards well-being. 
-            
-            <span className='font-fraunces-slab text-lg lg:text-2xl mb-8'><br />
-            Get the best guidance from Gold Medalist Dr. Zahoor. Get rid the challenges you're facing—be it mental, physical, or emotional pain.
-            </span>
-          </h2>
+          <InViewWrapper>
+            <h2 className="font-fraunces-slab text-2xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 max-w-2xl sm:max-w-3xl lg:max-w-4xl leading-tight sm:leading-snug lg:leading-normal">
+              Start your journey towards well-being.
+
+              <span className='font-fraunces-slab text-lg lg:text-2xl mb-8'><br />
+                Get the best guidance from Gold Medalist Dr. Zahoor. Get rid the challenges you're facing—be it mental, physical, or emotional pain.
+              </span>
+            </h2>
+          </InViewWrapper>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <button
@@ -262,9 +270,9 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="w-full lg:w-3/5 h-[500px] lg:h-auto lg:py-16 lg:pr-8">
-            <Suspense fallback={<div>Loading map...</div>}>
-              <Map />
-            </Suspense>
+              <Suspense fallback={<div>Loading map...</div>}>
+                <Map />
+              </Suspense>
             </div>
           </div>
         </section>

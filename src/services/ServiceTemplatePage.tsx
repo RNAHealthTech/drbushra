@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import servicesData, { ServiceData } from "./services";
 import AppointmentModal from "../components/AppointmentModal";
+import InViewWrapper from "../components/InViewWrapper";
 const ServiceTemplatePage: React.FC = () => {
 
   useEffect(() => {
@@ -55,45 +56,48 @@ const ServiceTemplatePage: React.FC = () => {
       </section>
 
       <section className="mx-auto px-4 py-8 mt-12 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Symptoms</h2>
-          <ul className="list-disc pl-5 mb-8">
-            {service.symptoms.map((symptom, index) => (
-              <li key={index} className="mb-2 font-work-sans">{symptom}</li>
-            ))}
-          </ul>
+        <InViewWrapper>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Symptoms</h2>
+            <ul className="list-disc pl-5 mb-8">
+              {service.symptoms.map((symptom, index) => (
+                <li key={index} className="mb-2 font-work-sans">{symptom}</li>
+              ))}
+            </ul>
 
-          <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Causes</h2>
-          <ul className="list-disc pl-5 mb-8">
-            {service.causes.map((cause, index) => (
-              <li key={index} className="mb-2 font-work-sans">{cause}</li>
-            ))}
-          </ul>
+            <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Causes</h2>
+            <ul className="list-disc pl-5 mb-8">
+              {service.causes.map((cause, index) => (
+                <li key={index} className="mb-2 font-work-sans">{cause}</li>
+              ))}
+            </ul>
 
-          <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Therapies</h2>
-          <ul className="list-disc pl-5 mb-8">
-            {service.therapies.map((therapy, index) => (
-              <li key={index} className="mb-2 font-work-sans">{therapy}</li>
-            ))}
-          </ul>
+            <h2 className="text-2xl font-bold mb-4 text-foreground font-fraunces-slab">Therapies</h2>
+            <ul className="list-disc pl-5 mb-8">
+              {service.therapies.map((therapy, index) => (
+                <li key={index} className="mb-2 font-work-sans">{therapy}</li>
+              ))}
+            </ul>
+        
 
-          <div className="text-center mt-12">
-            <Link
-              to="#"
-              onClick={(e) => {
-                e.preventDefault();
-                openModal()
-              }}
-              className="bg-buttonish text-zinc-800 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-colors hover:bg-opacity-90 inline-block"
-            >
-              Schedule Your Therapy Session
-            </Link>
-            <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
+        <div className="text-center mt-12">
+          <Link
+            to="#"
+            onClick={(e) => {
+              e.preventDefault();
+              openModal()
+            }}
+            className="bg-buttonish text-zinc-800 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base transition-colors hover:bg-opacity-90 inline-block"
+          >
+            Schedule Your Therapy Session
+          </Link>
+          <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
 
-          </div>
         </div>
-      </section>
-    </main>
+      </div>
+      </InViewWrapper>
+    </section>
+    </main >
   );
 };
 

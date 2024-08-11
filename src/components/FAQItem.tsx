@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import InViewWrapper from './InViewWrapper';
 
 const FAQItem = ({ question, children }:{question:string, children: string}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+   
     <div className="border-b border-gray-200 py-4 w-full max-w-2xl">
+        <InViewWrapper>
       <button
         className="flex justify-between items-center w-full text-left"
         onClick={() => setIsOpen(!isOpen)}
@@ -27,6 +30,7 @@ const FAQItem = ({ question, children }:{question:string, children: string}) => 
           {children}
         </div>
       )}
+      </InViewWrapper>
     </div>
   );
 };
