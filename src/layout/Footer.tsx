@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               <p className="font-work-sans-slab text-sm">Nizamuddin West, New Delhi,</p>
               <p className="font-work-sans-slab text-sm">Delhi 110013</p>
             </motion.div>
-            <InViewWrapper>
+            
               <motion.div className="space-y-4">
                 <h3 className="font-fraunces text-accent text-xl mb-4">Clinic Hours</h3>
                 <p className="font-work-sans-slab text-sm">Mon, Tue, Wed, Fri: 6–9 pm</p>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
 
               </motion.div>
-            </InViewWrapper>
+            
           </motion.div>
 
           <motion.div className={`mt-12 pt-8 border-t border-background flex flex-col md:flex-row justify-between items-center ${isMobile ? 'flex-shrink-0' : ''}`}>
