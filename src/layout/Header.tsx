@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -137,8 +137,8 @@ const Header: React.FC = () => {
                 )}
               </div>
               <div className="mt-auto p-4">
-              <button className="w-full bg-accent text-foreground px-6 py-2 rounded-lg hover:bg-accent-dark transition-colors text-lg font-semibold">
-                <NavLink to='/contact'>Contact</NavLink>
+              <button onClick={handleLinkClick} className="w-full bg-accent text-foreground px-6 py-2 rounded-lg hover:bg-accent-dark transition-colors text-lg font-semibold">
+                <Link to='/contact'>Contact</Link>
                 </button>
               </div>
             </div>
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
 
           <div className="hidden md:block">
             <button className="bg-buttonish text-foreground px-6 py-2 rounded hover:bg-accent-dark transition-colors text-lg font-semibold">
-              <NavLink to='/contact'>Contact</NavLink>
+              <Link to='/contact'>Contact</Link>
             </button>
           </div>
         </nav>
