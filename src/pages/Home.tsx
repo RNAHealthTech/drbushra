@@ -118,7 +118,7 @@ const Home: React.FC = () => {
       </Helmet>
       <main className="flex-grow px-6 py-8">
         <section className="mb-12 flex justify-center">
-          <InViewWrapper>
+        
             <div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
               <img
                 src="/images/hero-home.jpg"
@@ -141,7 +141,7 @@ const Home: React.FC = () => {
                 <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
               </div>
             </div>
-          </InViewWrapper>
+ 
         </section>
 
         <section className='bg-gradient-to-l from-peacher to-orange-100 mb-12 flex flex-col items-center text-center px-6 py-16 lg:px-8'>

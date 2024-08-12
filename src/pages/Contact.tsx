@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
 
       <main className="flex-grow px-6 py-8">
         <section className="mb-12 flex justify-center">
-          <InViewWrapper>
+       
           <motion.div className="relative shadow-md rounded-[40px] w-full max-w-[1200px] overflow-hidden">
             <img
               src="/images/contact-hero.jpg"
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
               </button>
             </motion.div>
           </motion.div>
-          </InViewWrapper>
+ 
         </section>
         <section className="contact-info py-24">
           <motion.div className="container mx-auto px-4">
