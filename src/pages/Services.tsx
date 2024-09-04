@@ -13,11 +13,11 @@ interface ServiceCardProps {
 export const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc, path }) => {
     return (
         <Link to={path} className="block">
-            <div className="bg-cardish rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
                 <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
                 <div className="p-4">
                     <h3 className="font-fraunces-slab text-xl font-semibold text-foreground mb-2">{title}</h3>
-                    <p className="font-work-sans text-sm text-new">{description}</p>
+                    <p className="font-work-sans text-sm text-pink-500">{description}</p>
                 </div>
             </div>
         </Link>
@@ -40,61 +40,61 @@ const Services: React.FC = () => {
         {
             title: "Headache & Migraine",
             description: "Specialized treatment for chronic headaches and migraines.",
-            imageSrc: "/images/headache1.jpg",
+            imageSrc: "/images/headache-colour.jpg",
             path: "/services/headache-migraine"
         },
         {
             title: "Anger and Stress Management",
             description: "Techniques to manage anger and reduce stress in daily life.",
-            imageSrc: "/images/headache2.jpg",
+            imageSrc: "/images/stress-management.jpg",
             path: "/services/anger-stress-management"
         },
         {
             title: "Anxiety + Depression",
             description: "Comprehensive care for anxiety and depression disorders.",
-            imageSrc: "/images/depression.jpg",
+            imageSrc: "/images/depression-colour.jpg",
             path: "/services/anxiety-depression"
         },
         {
             title: "Bipolar Disorder",
             description: "Specialized treatment for bipolar disorder and mood stabilization.",
-            imageSrc: "/images/bipolar.jpg",
+            imageSrc: "/images/bipolar-colour.jpg",
             path: "/services/bipolar-disorder"
         },
         {
             title: "Psychosis",
             description: "Expert care for various forms of psychosis.",
-            imageSrc: "/images/psychosis.png",
+            imageSrc: "/images/psychosis.jpg",
             path: "/services/psychosis"
         },
         {
             title: "Child & Adolescent Guidance",
             description: "Supportive guidance for children and adolescents.",
-            imageSrc: "/images/child-adolescent.jpg",
+            imageSrc: "/images/child-adolescent-colour.jpg",
             path: "/services/child-adolescent-guidance"
         },
         {
             title: "Internet & Technology Addiction",
             description: "Treatment for internet and technology-related addictions.",
-            imageSrc: "/images/tech-addiction.jpg",
+            imageSrc: "/images/tech-addiction-colour.jpg",
             path: "/services/internet-technology-addiction"
         },
         {
             title: "Lifestyle & Relationship Issues",
             description: "Counseling for lifestyle changes and relationship problems.",
-            imageSrc: "/images/lifestyle-relationship.jpg",
+            imageSrc: "/images/lifestyle-relationship-colour.jpg",
             path: "/services/lifestyle-relationship-issues"
         },
         {
             title: "Counselling",
             description: "General counseling services for various mental health concerns.",
-            imageSrc: "/images/counselling.jpg",
+            imageSrc: "/images/counselling-colour.jpg",
             path: "/services/counselling"
         },
         {
             title: "Psychotherapy",
             description: "In-depth psychotherapy for long-term mental health improvement.",
-            imageSrc: "/images/psychotherapy.jpg",
+            imageSrc: "/images/psychotherapy.png",
             path: "/services/psychotherapy"
         }
     ];

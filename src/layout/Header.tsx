@@ -76,15 +76,18 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`font-work-sans-slab sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isSticky ? 'bg-background shadow-md' : 'bg-transparent'}`}>
-   
+    <>
+    <p className="w-full bg-peachy text-sm lg:text-lg text-center text-zinc-900 font-semibold leading-relaxed">
+    Emergancy Consultation : XX-XXXX-XXXX
+    </p>
+    <header className={`font-work-sans-slab sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isSticky ? 'bg-white shadow-md' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <nav className="flex flex-wrap justify-between items-center">
           <Link to="/" className="flex items-center">
             <img src="/images/logo.png" alt="Dr. Bushra Zahoor"
-              className={`transition-all duration-300 ${isScrolled
+              className={`transition-all duration-300 mb-2 ${isScrolled
                   ? 'h-16 w-26 md:h-12 md:w-24 lg:h-16 lg:w-32'
-                  : 'h-20 w-30 md:h-16 md:w-32 lg:h-20 lg:w-52'
+                  : 'h-20 w-30 md:h-16 md:w-32 lg:h-20 lg:w-48'
                 }`} />
           </Link>
 
@@ -136,8 +139,8 @@ const Header: React.FC = () => {
                   </div>
                 )}
               </div>
-              <div className="mt-auto p-4">
-              <button onClick={handleLinkClick} className="w-full bg-accent text-foreground px-6 py-2 rounded-lg hover:bg-accent-dark transition-colors text-lg font-semibold">
+              <div className="mt-auto p-4 items-center text-center">
+              <button onClick={handleLinkClick} className="w-4/5 bg-gradient-to-l from-peacher to-orange-100 border-2 border-solid border-white text-foreground px-6 py-2 rounded-[40px] shadow-xl text-lg font-semibold">
                 <Link to='/contact'>Contact</Link>
                 </button>
               </div>
@@ -180,13 +183,14 @@ const Header: React.FC = () => {
           </div>
 
           <div className="hidden md:block">
-            <button className="bg-buttonish text-foreground px-6 py-2 rounded hover:bg-accent-dark transition-colors text-lg font-semibold">
+            <button className="bg-gradient-to-l from-peacher to-orange-100 text-foreground px-8 py-2 rounded-[30px] text-lg font-semibold shadow-xl">
               <Link to='/contact'>Contact</Link>
             </button>
           </div>
         </nav>
       </div>
     </header>
+    </>
   );
 };
 

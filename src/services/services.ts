@@ -12,7 +12,7 @@ export interface ServiceData {
 const servicesData: Record<string, ServiceData> = {
     "headache-migraine": {
         title: "Headache & Migraine",
-        heroImage: "/images/headache1.jpg",
+        heroImage: "/images/headache-colour.jpg",
         description: "Specialized treatment for chronic headaches and migraines.",
         symptoms: [
             "Intense throbbing pain",
@@ -32,7 +32,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "anger-stress-management": {
         title: "Anger and Stress Management",
-        heroImage: "/images/headache2.jpg",
+        heroImage: "/images/stress-management.jpg",
         description: "Techniques to manage anger and reduce stress in daily life.",
         symptoms: [
             "Irritability and short temper",
@@ -52,7 +52,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "anxiety-depression": {
         title: "Anxiety + Depression",
-        heroImage: "/images/depression.jpg",
+        heroImage: "/images/depression-colour.jpg",
         description: "Comprehensive care for anxiety and depression disorders.",
         symptoms: [
             "Persistent feelings of sadness or emptiness",
@@ -75,7 +75,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "bipolar-disorder": {
         title: "Bipolar Disorder",
-        heroImage: "/images/bipolar.jpg",
+        heroImage: "/images/bipolar-colour.jpg",
         description: "Specialized treatment for bipolar disorder and mood stabilization.",
         symptoms: [
             "Extreme mood swings",
@@ -98,7 +98,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "psychosis": {
         title: "Psychosis",
-        heroImage: "/images/psychosis.png",
+        heroImage: "/images/psychosis.jpg",
         description: "Expert care for various forms of psychosis.",
         symptoms: [
             "Hallucinations",
@@ -121,7 +121,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "child-adolescent-guidance": {
         title: "Child & Adolescent Guidance",
-        heroImage: "/images/child-adolescent.jpg",
+        heroImage: "/images/child-adolescent-colour.jpg",
         description: "Supportive guidance for children and adolescents.",
         symptoms: [
             "Behavioral problems",
@@ -144,7 +144,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "internet-technology-addiction": {
         title: "Internet & Technology Addiction",
-        heroImage: "/images/tech-addiction.jpg",
+        heroImage: "/images/tech-addiction-colour.jpg",
         description: "Treatment for internet and technology-related addictions.",
         symptoms: [
             "Excessive time spent online",
@@ -167,7 +167,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "lifestyle-relationship-issues": {
         title: "Lifestyle & Relationship Issues",
-        heroImage: "/images/lifestyle-relationship.jpg",
+        heroImage: "/images/lifestyle-relationship-colour.jpg",
         description: "Counseling for lifestyle changes and relationship problems.",
         symptoms: [
             "Communication difficulties",
@@ -190,7 +190,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "counselling": {
         title: "Counselling",
-        heroImage: "/images/counselling.jpg",
+        heroImage: "/images/counselling-colour.jpg",
         description: "General counseling services for various mental health concerns.",
         symptoms: [
             "Emotional distress",
@@ -213,7 +213,7 @@ const servicesData: Record<string, ServiceData> = {
     },
     "psychotherapy": {
         title: "Psychotherapy",
-        heroImage: "/images/psychotherapy.jpg",
+        heroImage: "/images/psychotherapy.png",
         description: "In-depth psychotherapy for long-term mental health improvement.",
         symptoms: [
             "Chronic mental health issues",

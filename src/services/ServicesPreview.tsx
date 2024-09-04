@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import servicesData from "./services";
 import { ServiceCard } from "../pages/Services";
+import EmpowermentText from "../components/EmpoweredText";
 
 const ServicesPreview: React.FC = () => {
     const navigate = useNavigate();
@@ -20,10 +21,34 @@ const ServicesPreview: React.FC = () => {
     }, [serviceEntries.length]);
 
     return (
-        <section className="mb-12 flex flex-col justify-center items-center text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold mb-8 text-foreground font-fraunces-slab">Our Services</h2>
+        <motion.section 
+        id="services" 
+        className="mb-6 flex flex-col justify-center items-center text-center"
+        >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-foreground font-fraunces-slab">Our Services</h2>
 
-            {/* Mobile view */}
+            {/* New copy text and image section */}
+            <div className="w-full flex flex-col md:flex-row items-center md:items-start mb-12">
+                {/* Image (first on mobile) */}
+                <motion.div 
+                    className="w-full md:w-1/2 mb-6 md:mb-0 md:order-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <img 
+                        src="/images/women-tree.png" 
+                        alt="Dr. Bushra Zahoor" 
+                         
+                    />
+                </motion.div>
+
+                {/* Copy text */}
+            <EmpowermentText />
+
+            </div>
+
+            {/* Existing mobile view */}
             <div className="md:hidden w-full max-w-sm overflow-hidden">
                 <AnimatePresence initial={false} custom={1}>
                     <motion.div>
@@ -37,7 +62,7 @@ const ServicesPreview: React.FC = () => {
                 </AnimatePresence>
             </div>
 
-            {/* Desktop view */}
+            {/* desktop view */}
             <div className="hidden md:flex gap-6 mb-8 mt-8">
                 <div className="w-1/2 grid grid-cols-2 gap-6">
                     {serviceEntries.slice(5, 9).map(([key, service], index) => (
@@ -86,13 +111,13 @@ const ServicesPreview: React.FC = () => {
 
             <motion.button
                 onClick={() => navigate("/services")}
-                className="mt-4 bg-buttonish text-xl text-foreground font-semibold px-6 py-3 rounded-lg"
+                className="mt-14 bg-pink-500 hover:bg-pink-700 transition-colors text-xl text-white font-semibold px-6 py-3 rounded-[30px] shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
             >
                 View Our Services
             </motion.button>
-        </section>
+        </motion.section>
     );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -8,11 +8,12 @@ import Contact from './pages/Contact';
 import ServiceTemplatePage from './services/ServiceTemplatePage';
 
 import './index.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Layout>
+   <ParallaxProvider>
+     <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,7 +22,8 @@ const App: React.FC = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-    </Router>
+   </ParallaxProvider>
+     
   )
 }
 

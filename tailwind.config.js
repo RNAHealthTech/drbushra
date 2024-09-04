@@ -6,17 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background': '#F7EED9',
-        'peacher': '#F0E3C9',
+        'background': '#F9E5E5',
+        'peacher': '#F9D5D3',
         'foreground': '#232020',
-        'accent': '#FFFF00',
-        'buttonish': '#e8cf41',
-        'cardish': '#edd0a1',
-        'new': '#967b50'
+        'accent': '#FFF',
+        'buttonish': '#fff',
+        'cardish': '#FCE3E3',
+        'new': '#FCECEC',
+        'peachy': '#F0E3C9'
       },
       fontFamily: {
         'fraunces-slab': ['Fraunces', 'serif'],
-        'work-sans': ['Work Sans', 'sans-serif'],
+        'work-sans-slab': ['Work Sans', 'sans-serif'],
       }
     },
   },

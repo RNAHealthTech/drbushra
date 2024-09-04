@@ -86,8 +86,10 @@ const Footer: React.FC = () => {
             <motion.div className="font-work-sans-slab text-sm mb-4 md:mb-0">
               © {currentYear} Dr. Bushra Zahoor. All rights reserved.
             </motion.div>
-            <motion.div className="font-work-sans-slab text-sm">
-              Website by <a href='https://rnahealthtech.com' className='text-white'>RNA HealthTech</a>
+            <motion.div className="font-work-sans-slab bg-peachy text-lg text-center px-6 text-zinc-900 leading-relaxed">
+             <p className='w-full'>
+             Website by <a href='https://rnahealthtech.com'>RNA HealthTech</a>  
+             </p>
             </motion.div>
           </motion.div>
         </motion.div>
