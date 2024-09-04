@@ -305,7 +305,7 @@ const Home: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                  Dr. Bushra Zahoor
+                  Dr.(Prof) Bushra Zahoor
                 </motion.h3>
                 <motion.p
                   className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-pink-400 font-work-sans'
