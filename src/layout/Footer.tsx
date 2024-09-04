@@ -27,37 +27,38 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer className="bg-foreground text-background py-12 px-6 rounded-t-[40px] shadow-md">
-      <InViewWrapper>
-        <motion.div className={`container mx-auto ${isMobile ? 'flex flex-col h-[70vh]' : ''}`}>
-          <motion.div className={`${isMobile ? 'flex-shrink-0' : ''}`}>
-            <h3 className="font-fraunces text-2xl mb-4">Dr. Bushra Zahoor</h3>
-            <p className="font-work-sans-slab text-sm mb-4">MBBS(Gold Medalist), MD, DNB, Psychiatry</p>
-            <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
+    <>
+      <footer className="bg-foreground text-background py-12 px-6 rounded-t-[40px] shadow-md">
+        <InViewWrapper>
+          <motion.div className={`container mx-auto ${isMobile ? 'flex flex-col h-[70vh]' : ''}`}>
+            <motion.div className={`${isMobile ? 'flex-shrink-0' : ''}`}>
+              <h3 className="font-fraunces text-2xl mb-4">Dr. Bushra Zahoor</h3>
+              <p className="font-work-sans-slab text-sm mb-4">MBBS(Gold Medalist), MD, DNB, Psychiatry</p>
+              <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
 
-          </motion.div>
-
-          <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''
-            }`}>
-            <motion.div className="space-y-4">
-              <h3 className="font-fraunces text-xl mb-4">Contact</h3>
-              <motion.div className="flex items-center space-x-2">
-                <FaPhone className="text-accent" />
-                <p className="font-work-sans-slab text-sm">+91 9717288672</p>
-              </motion.div>
-              <motion.div className="flex items-center space-x-2">
-                <FaEnvelope className="text-accent" />
-                <p className="font-work-sans-slab text-sm">bushra.zhr07@gmail.com</p>
-              </motion.div>
             </motion.div>
 
-            <motion.div className="space-y-4">
-              <h3 className="font-fraunces text-xl mb-4">Address</h3>
-              <p className="font-work-sans-slab text-sm">E-20, basement, Block E,</p>
-              <p className="font-work-sans-slab text-sm">Nizamuddin West, New Delhi,</p>
-              <p className="font-work-sans-slab text-sm">Delhi 110013</p>
-            </motion.div>
-            
+            <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''
+              }`}>
+              <motion.div className="space-y-4">
+                <h3 className="font-fraunces text-xl mb-4">Contact</h3>
+                <motion.div className="flex items-center space-x-2">
+                  <FaPhone className="text-accent" />
+                  <p className="font-work-sans-slab text-sm">+91 9717288672</p>
+                </motion.div>
+                <motion.div className="flex items-center space-x-2">
+                  <FaEnvelope className="text-accent" />
+                  <p className="font-work-sans-slab text-sm">bushra.zhr07@gmail.com</p>
+                </motion.div>
+              </motion.div>
+
+              <motion.div className="space-y-4">
+                <h3 className="font-fraunces text-xl mb-4">Address</h3>
+                <p className="font-work-sans-slab text-sm">E-20, basement, Block E,</p>
+                <p className="font-work-sans-slab text-sm">Nizamuddin West, New Delhi,</p>
+                <p className="font-work-sans-slab text-sm">Delhi 110013</p>
+              </motion.div>
+
               <motion.div className="space-y-4">
                 <h3 className="font-fraunces text-accent text-xl mb-4">Clinic Hours</h3>
                 <p className="font-work-sans-slab text-sm">Mon, Tue, Wed, Fri: 6–9 pm</p>
@@ -79,22 +80,27 @@ const Footer: React.FC = () => {
                 <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
 
               </motion.div>
-            
+
+            </motion.div>
+
+            <motion.div className={`mt-12 pt-8 border-t border-background text-center justify-between items-center ${isMobile ? 'flex-shrink-0' : ''}`}>
+              <motion.div className="font-work-sans-slab text-sm mb-4 md:mb-0">
+                © {currentYear} Dr. Bushra Zahoor. All rights reserved.
+              </motion.div>
+
+            </motion.div>
+
           </motion.div>
 
-          <motion.div className={`mt-12 pt-8 border-t border-background flex flex-col md:flex-row justify-between items-center ${isMobile ? 'flex-shrink-0' : ''}`}>
-            <motion.div className="font-work-sans-slab text-sm mb-4 md:mb-0">
-              © {currentYear} Dr. Bushra Zahoor. All rights reserved.
-            </motion.div>
-            <motion.div className="font-work-sans-slab bg-peachy text-lg text-center px-6 text-zinc-900 leading-relaxed">
-             <p className='w-full'>
-             Website by <a href='https://rnahealthtech.com'>RNA HealthTech</a>  
-             </p>
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      </InViewWrapper>
-    </footer>
+        </InViewWrapper>
+
+      </footer>
+      <motion.div className="bg-peachy text-lg text-center font-semibold px-6 text-zinc-800 leading-relaxed">
+
+        Website by <a href='https://rnahealthtech.com'>RNA HealthTech</a>
+
+      </motion.div>
+    </>
   );
 };
 
