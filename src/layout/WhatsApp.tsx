@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsApp:React.FC = () => {
-    const phoneNumber = '916306204612'; //gotta be updated
+    const phoneNumber = '919310330922';  
     const message = "Hello, Dr. Bushra Zahoor. I’m interested in scheduling a consultation session for mental health support. Could you please share your availability and the booking process? Thank you!";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
