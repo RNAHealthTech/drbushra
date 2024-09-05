@@ -77,7 +77,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <p className="w-full bg-peachy text-sm lg:text-lg text-center text-zinc-900 font-semibold leading-relaxed">
+      <p className="w-full bg-peachy text-sm lg:text-lg text-center text-zinc-900 font-semibold leading-relaxed py-2">
         <a href="tel:XX-XXXX-XXXX">Emergency Consultation : XX-XXXX-XXXX</a>
       </p>
       <header className={`font-work-sans-slab sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isSticky ? 'bg-white shadow-md' : 'bg-white'}`}>

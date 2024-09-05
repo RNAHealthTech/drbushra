@@ -393,7 +393,7 @@ const Home: React.FC = () => {
                 variants={itemVariants}
               >
                 <br />
-                Get the best guidance from Gold Medalist Dr. Zahoor. Get rid of the challenges you're facing—be it mental, physical, or emotional pain.
+                Get the best guidance from Gold Medalist Dr.(Prof) Zahoor. Get rid of the challenges you're facing—be it mental, physical, or emotional pain.
               </motion.span>
             </motion.h2>
           </InViewWrapper>
