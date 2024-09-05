@@ -5,9 +5,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @layer base {
   * {
     @apply m-0 p-0 box-border;
+  }
+
+  ::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #dd0c40;
+    /* Tailwind's blue-500 */
+    border-radius: 16px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e62867;
+    /* Tailwind's blue-600 */
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width:thin;
+    scrollbar-color: #dabeb5 #f1f1f1;
   }
 
   body {
