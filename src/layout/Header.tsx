@@ -77,7 +77,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-   
+
       <p className="w-full bg-peachy text-sm lg:text-lg text-center text-zinc-900 font-semibold leading-relaxed py-2">
         <a href="tel:9310330922">Emergency Consultation : 91-93103-30922 </a>
       </p>
@@ -112,42 +112,46 @@ const Header: React.FC = () => {
             {/* Mobile menu */}
             {isMenuOpen && (
               <div className="md:hidden fixed inset-0 bg-background z-50 flex flex-col">
-                <div className="p-4 pt-16">
-                  <button
-                    className="absolute top-4 right-4 text-gray-800 hover:text-foreground focus:outline-none"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                  <Link to="/" className="block py-2 text-gray-800 hover:text-foreground text-lg font-semibold" onClick={handleLinkClick}>Home</Link>
-                  <Link to="/about" className="block py-2 text-gray-800 hover:text-foreground text-lg font-semibold" onClick={handleLinkClick}>Who I am</Link>
-                  <button
-                    className="w-full text-left py-2 text-gray-800 hover:text-foreground text-lg font-semibold flex justify-between items-center"
-                    onClick={handleServicesClick}
-                  >
-                    Treatments & Therapies
-                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </button>
-                  {isServicesOpen && (
-                    <div className="pl-4">
-                      {services.map((service) => (
-                        <Link
-                          key={service.path}
-                          to={service.path}
-                          className="block py-2 text-gray-700 hover:text-foreground text-base"
-                          onClick={handleLinkClick}
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                <div className="flex-grow overflow-y-auto">
+                  <div className="p-4 pt-16 relative">
+                    <button
+                      className="absolute top-4 right-4 text-gray-800 hover:text-foreground focus:outline-none"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                    <nav className="space-y-2">
+                      <Link to="/" className="block py-2 text-gray-800 hover:text-foreground text-lg font-semibold" onClick={handleLinkClick}>Home</Link>
+                      <Link to="/about" className="block py-2 text-gray-800 hover:text-foreground text-lg font-semibold" onClick={handleLinkClick}>Who I am</Link>
+                      <button
+                        className="w-full text-left py-2 text-gray-800 hover:text-foreground text-lg font-semibold flex justify-between items-center"
+                        onClick={handleServicesClick}
+                      >
+                        Treatments & Therapies
+                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                      {isServicesOpen && (
+                        <div className="pl-4 space-y-2">
+                          {services.map((service) => (
+                            <Link
+                              key={service.path}
+                              to={service.path}
+                              className="block py-2 text-gray-700 hover:text-foreground text-base"
+                              onClick={handleLinkClick}
+                            >
+                              {service.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </nav>
+                  </div>
                 </div>
-                <div className="mt-auto p-4 items-center text-center">
+                <div className="p-4 items-center text-center">
                   <button onClick={handleLinkClick} className="w-4/5 bg-gradient-to-l from-[#f5495d] to-[#faac9b] border-2 border-solid border-white text-foreground px-6 py-2 rounded-[40px] shadow-xl text-lg font-semibold">
                     <Link to='/contact'>Contact</Link>
                   </button>

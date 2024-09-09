@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         <InViewWrapper>
           <motion.div className={`container mx-auto ${isMobile ? 'flex flex-col h-[70vh]' : ''}`}>
             <motion.div className={`${isMobile ? 'flex-shrink-0' : ''}`}>
-              <h3 className="font-fraunces text-2xl mb-4">Dr.(Prof) Bushra Zahoor</h3>
+              <h3 className="font-fraunces text-2xl mb-4">Dr. Bushra Zahoor</h3>
               <p className="font-work-sans-slab text-sm mb-4">MBBS(Gold Medalist), MD, DNB, Psychiatry</p>
               <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
 
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
 
             <motion.div className={`mt-12 pt-8 border-t border-background text-center justify-between items-center ${isMobile ? 'flex-shrink-0' : ''}`}>
               <motion.div className="font-work-sans-slab text-sm mb-4 md:mb-0">
-                © {currentYear} Dr.(Prof) Bushra Zahoor. All rights reserved.
+                © {currentYear} Dr. Bushra Zahoor. All rights reserved.
               </motion.div>
 
             </motion.div>

@@ -44,7 +44,7 @@ const About: React.FC = () => {
                                 >
                                     <div className="bg-peachy p-6 rounded-lg shadow-lg">
                                         <h1 className="font-fraunces-slab text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#8B6E4E]">
-                                            Dr.(Prof) Bushra Zahoor
+                                            Dr. Bushra Zahoor
                                         </h1>
                                         <h2 className="mt-2 text-xl font-semibold text-[#A0815A] font-work-sans-slab">
                                             MBBS, MD (Psychiatry), DNB (Psychiatry)

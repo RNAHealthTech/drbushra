@@ -305,7 +305,7 @@ const Home: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                  Dr.(Prof) Bushra Zahoor
+                  Dr. Bushra Zahoor
                 </motion.h3>
                 <motion.p
                   className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-pink-400 font-work-sans'
@@ -393,7 +393,7 @@ const Home: React.FC = () => {
                 variants={itemVariants}
               >
                 <br />
-                Get the best guidance from Gold Medalist Dr.(Prof) Zahoor. Get rid of the challenges you're facing—be it mental, physical, or emotional pain.
+                Get the best guidance from Gold Medalist Dr. Zahoor. Get rid of the challenges you're facing—be it mental, physical, or emotional pain.
               </motion.span>
             </motion.h2>
           </InViewWrapper>
