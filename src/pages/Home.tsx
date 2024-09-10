@@ -9,7 +9,7 @@ import Testimonials from '../components/Testimonials';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from 'framer-motion';
 import ImageCarousel from '../components/ImageCarousel';
-
+import VimeoEmbed from '../components/VideoEmbed';
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
@@ -334,6 +334,25 @@ const Home: React.FC = () => {
                 >
                   About Dr. Zahoor
                 </motion.button>
+              </div>
+            </div>
+            <div className="mt-12">
+              <h3 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground font-fraunces-slab">Featured Videos</h3>
+              <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                <div className="w-full md:w-1/2">
+                  <VimeoEmbed
+                    videoId="1007912813"
+                    title="Dr. Bushra Zahoor"
+                    aspectRatio="56.25%"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <VimeoEmbed
+                    videoId="1007913819"
+                    title="Doc Speak"
+                    aspectRatio="56.25%"
+                  />
+                </div>
               </div>
             </div>
           </div>
