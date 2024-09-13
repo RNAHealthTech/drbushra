@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://southdelhipsychiatrist.com/</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/about</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/contact</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/headache-migraine</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/anger-stress-management</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/anxiety-depression</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/bipolar-disorder</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/psychosis</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/child-adolescent-guidance</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/addiction-disorders</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/internet-technology-addiction</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/lifestyle-relationship-issues</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/counselling</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/services/psychotherapy</loc>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/images</loc>
+        <image:image>
+            <image:loc>
+                https://southdelhipsychiatrist.com/images/WhatsApp%20Image%202024-09-03%20at%2012.11.54%20AM.jpeg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>WhatsApp Image 2024-09-03 at 12.11.54 AM.jpeg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/addiction-colour.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>addiction-colour.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/avatar.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>avatar.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/bipolar-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>bipolar-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/child-adolescent-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>child-adolescent-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/contact-doctor.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>contact-doctor.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/contact-hero.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>contact-hero.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/counselling-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>counselling-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/depression-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>depression-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-1.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>doctor-1.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-2.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>doctor-2.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-3.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>doctor-3.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/empowered-women.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>empowered-women.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/headache-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>headache-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/lifestyle-relationship-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>lifestyle-relationship-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>logo.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo2.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>logo2.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo3.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>logo3.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/mental-health.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mental-health.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/mentalhealth-pink.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>mentalhealth-pink.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/migraine-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>migraine-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/poster.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>poster.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychologist-session.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>psychologist-session.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychosis.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>psychosis.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychotherapy.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>psychotherapy.png</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/services-hero.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>services-hero.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/stress-management.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>stress-management.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/tech-addiction-colour.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>tech-addiction-colour.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/testimonials.jpg</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>testimonials.jpg</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/women-tree.png</image:loc>
+            <image:caption>Image from our gallery</image:caption>
+            <image:title>women-tree.png</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://southdelhipsychiatrist.com/gallery</loc>
+        <image:image>
+            <image:loc>
+                https://southdelhipsychiatrist.com/images/WhatsApp%20Image%202024-09-03%20at%2012.11.54%20AM.jpeg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/addiction-colour.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/avatar.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/bipolar-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/child-adolescent-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/contact-doctor.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/contact-hero.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/counselling-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/depression-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-1.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/doctor-3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/empowered-women.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/headache-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/lifestyle-relationship-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo2.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/logo3.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/mental-health.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/mentalhealth-pink.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/migraine-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/poster.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychologist-session.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychosis.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/psychotherapy.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/services-hero.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/stress-management.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/tech-addiction-colour.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/testimonials.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://southdelhipsychiatrist.com/images/women-tree.png</image:loc>
+        </image:image>
+    </url>
+</urlset>
