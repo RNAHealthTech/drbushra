@@ -134,9 +134,9 @@ const Contact: React.FC = () => {
               <ContactItem
                 icon={<FaPhone className="text-green-500" />}
                 title="Phone"
-                content="+91-9717288672"
+                content="+91-9310330922"
                 gradientClass="from-cardish to-peacher"
-                action={() => window.location.href = 'tel:+919717288672'}
+                action={() => window.location.href = 'tel:+919310330922'}
               />
               <ContactItem
                 icon={<FaEnvelope className="text-purple-500" />}

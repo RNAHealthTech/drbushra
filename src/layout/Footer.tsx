@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                 <h3 className="font-fraunces text-xl mb-4">Contact</h3>
                 <motion.div className="flex items-center space-x-2">
                   <FaPhone className="text-accent" />
-                  <p className="font-work-sans-slab text-sm">+91 9717288672</p>
+                  <p className="font-work-sans-slab text-sm">+91 9310330922</p>
                 </motion.div>
                 <motion.div className="flex items-center space-x-2">
                   <FaEnvelope className="text-accent" />
