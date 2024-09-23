@@ -16,6 +16,12 @@ const App: React.FC = () => {
      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/jaganpura' element={<Home />} />
+          <Route path='/aliganj' element={<Home />} />
+          <Route path='/khan-market' element={<Home />} />
+          <Route path='/nizzamudin-east' element={<Home />} />
+          <Route path='/lajpat-nagar' element={<Home />} />
+          <Route path='/taimour-nagar' element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path='/services/:serviceId' Component={ServiceTemplatePage} />
