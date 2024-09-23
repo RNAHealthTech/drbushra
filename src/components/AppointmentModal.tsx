@@ -18,6 +18,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     name: '',
     phone: '',
     email: '',
+    appointmentType: 'offline',
     date: '',
     text: '',
     whatsapp: ''
@@ -33,6 +34,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
           name: '',
           phone: '',
           email: '',
+          appointmentType: 'offline', 
           date: '',
           text: '',
           whatsapp: ''
@@ -66,10 +68,11 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     Name: ${formData.name}
     Phone: ${formData.phone}
     Email: ${formData.email}
+    Appointment: ${formData.appointmentType}
     Date: ${formData.date}
     Text: ${formData.text}`;
 
-    const whatsappNumber = '916306204612'; // Replace with your WhatsApp number
+    const whatsappNumber = '919310330922'; // Replace with your WhatsApp number
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
@@ -108,6 +111,33 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-foreground">Phone</label>
                   <input type="tel" id="phone" name="phone"  value={formData.phone} onChange={handleChange} className="mt-1 block w-full border border-new rounded-md shadow-sm p-2 bg-background text-foreground" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-red-700 mb-2">Appointment Type</label>
+                  <div className="flex space-x-4">
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="appointmentType"
+                        value="offline"
+                        checked={formData.appointmentType === 'offline'}
+                        onChange={handleChange}
+                        className="form-radio text-red-600 focus:ring-red-500 h-4 w-4"
+                      />
+                      <span className="ml-2 text-red-700">Offline Appointment</span>
+                    </label>
+                    <label className="inline-flex items-center">
+                      <input
+                        type="radio"
+                        name="appointmentType"
+                        value="online"
+                        checked={formData.appointmentType === 'online'}
+                        onChange={handleChange}
+                        className="form-radio text-red-600 focus:ring-red-500 h-4 w-4"
+                      />
+                      <span className="ml-2 text-red-700">Online Appointment</span>
+                    </label>
+                  </div>
                 </div>
                 <div>
                   <label htmlFor="date" className="block text-sm font-medium text-foreground">Preferred Date</label>
