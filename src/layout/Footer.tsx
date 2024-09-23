@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               <motion.div className="space-y-4">
                 <h3 className="font-fraunces text-xl mb-4">Locations</h3>
                 <ul className="space-y-2">
-                  <li><Link to="/jaganpura" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Jaganpura</Link></li>
+                  <li><Link to="/jagnpura" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Jagnpura</Link></li>
                   <li><Link to="/aliganj" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Aliganj</Link></li>
                   <li><Link to="/khan-market" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Khan Market</Link></li>
                   <li><Link to="/nizzamudin-east" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Nizzamudin East</Link></li>
