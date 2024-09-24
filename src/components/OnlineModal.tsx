@@ -91,7 +91,7 @@ const OnlineModal: React.FC<AppointmentModalProps> = ({ isOpen2, onClose2 }) => 
             exit={{ y: -50, opacity: 0 }}
             className="bg-peacher rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto sm:overflow-y-visible"
             >
-            <h2 className="text-2xl font-bold mb-4 text-center font-fraunces-slab text-foreground">Book a Consultation</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center font-fraunces-slab text-foreground">Book Online Appointment</h2>
             {state.succeeded ? (
               <p className="text-new text-center font-work-sans">Your appointment has been booked successfully!</p>
             ) : (
