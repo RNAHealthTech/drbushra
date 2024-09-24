@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
               <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
             </motion.div>
 
-            <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''}`}>
+            <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''}`}>
               <motion.div className="space-y-4">
                 <h3 className="font-fraunces text-xl mb-4">Contact</h3>
                 <motion.div className="flex items-center space-x-2">
@@ -61,18 +61,6 @@ const Footer: React.FC = () => {
                 <p className="font-work-sans-slab text-sm">Thu: 6–9 pm (Hours might differ)</p>
                 <p className="font-work-sans-slab text-sm">Sat: 6–9 pm</p>
                 <p className="font-work-sans-slab text-sm">Sun: 11 am–2 pm</p>
-              </motion.div>
-
-              <motion.div className="space-y-4">
-                <h3 className="font-fraunces text-xl mb-4">Locations</h3>
-                <ul className="space-y-2">
-                  <li><Link to="/jagnpura" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Jagnpura</Link></li>
-                  <li><Link to="/aliganj" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Aliganj</Link></li>
-                  <li><Link to="/khan-market" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Khan Market</Link></li>
-                  <li><Link to="/nizzamudin-east" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Nizzamudin East</Link></li>
-                  <li><Link to="/lajpat-nagar" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Lajpat Nagar</Link></li>
-                  <li><Link to="/taimour-nagar" className="font-work-sans-slab text-sm hover:text-accent transition-colors">Taimour Nagar</Link></li>
-                </ul>
               </motion.div>
 
               <motion.div className="space-y-4">

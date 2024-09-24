@@ -227,6 +227,29 @@ const Contact: React.FC = () => {
                             <ValidationError prefix="Date" field="date" errors={state.errors} />
                           </motion.div>
 
+                          <motion.div>
+                            <label className="block text-sm font-medium text-red-700 mb-2">Appointment Type</label>
+                            <motion.div className="flex space-x-4">
+                              <label className="inline-flex items-center">
+                                <input
+                                  type="radio"
+                                  name="appointmentType"
+                                  value="offline"
+                                  className="form-radio text-red-600 focus:ring-red-500 h-4 w-4"
+                                />
+                                <span className="ml-2 text-red-700">Offline Appointment</span>
+                              </label>
+                              <label className="inline-flex items-center">
+                                <input
+                                  type="radio"
+                                  name="appointmentType"
+                                  value="online"
+                                  className="form-radio text-red-600 focus:ring-red-500 h-4 w-4"
+                                />
+                                <span className="ml-2 text-red-700">Online Appointment</span>
+                              </label>
+                            </motion.div>
+                          </motion.div>
                           <motion.div className="mb-8">
                             <label htmlFor="message" className="block text-oxford-blue text-sm font-semibold mb-2">How can I help You?</label>
                             <textarea

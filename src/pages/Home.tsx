@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import ImageCarousel from '../components/ImageCarousel';
 import VimeoEmbed from '../components/VideoEmbed';
 import SEOHelmet from '../SEOHelmet';
+import OnlineModal from '../components/OnlineModal';
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
@@ -102,9 +103,12 @@ const Home: React.FC = () => {
 
   const [activeCard, setActiveCard] = useState<CardKey>('mentalHealth');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  const openModal2 = () => setIsModalOpen2(true);
+  const closeModal2 = () => setIsModalOpen2(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -153,7 +157,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-     <SEOHelmet />
+      <SEOHelmet />
       <main className="flex-grow px-6 py-8">
 
         {/* home hero section */}
@@ -188,15 +192,27 @@ const Home: React.FC = () => {
                   Nurturing mental wellness for all, with specialized care and understanding for women's unique experiences.
                 </motion.p>
 
-                <motion.button
-                  className="mt-8 inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-pink-500 rounded-full hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-xl"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={openModal}
-                >
-                  Schedule a Consultation
-                </motion.button>
+                <motion.div className="flex flex-col items-center md:flex-row md:justify-center">
+                  <motion.button
+                    className="mt-8 mr-0 md:mr-6 inline-flex items-center px-6 py-3 text-md md:text-lg font-semibold text-white bg-pink-500 rounded-full hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-xl"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={openModal}
+                  >
+                    Schedule a Consultation
+                  </motion.button>
+                  <motion.button
+                    className="mt-8 inline-flex items-center px-6 py-3 text-md md:text-lg font-semibold text-pink-500 bg-white rounded-full hover:bg-white/50 transition duration-300 ease-in-out transform hover:scale-105 shadow-xl"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={openModal2}
+                  >
+                    Online Appointment
+                  </motion.button>
+                </motion.div>
+
                 <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
+                <OnlineModal isOpen2={isModalOpen2} onClose2={closeModal2} />
 
                 <motion.div
                   className="mt-8 flex items-center justify-center lg:justify-start"
