@@ -2,7 +2,6 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FAQItem from '../components/FAQItem';
 import ServicesPreview from '../services/ServicesPreview';
-import { Helmet } from 'react-helmet';
 import AppointmentModal from '../components/AppointmentModal';
 import InViewWrapper from '../components/InViewWrapper';
 import Testimonials from '../components/Testimonials';
@@ -10,6 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 import { motion } from 'framer-motion';
 import ImageCarousel from '../components/ImageCarousel';
 import VimeoEmbed from '../components/VideoEmbed';
+import SEOHelmet from '../SEOHelmet';
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
@@ -153,11 +153,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Dr. Bushra Zahoor | Mind Craft Neuro-Psychiatry Clinic | Delhi NCR</title>
-        <meta name="description" content="Welcome to Mind Craft Neuro-Psychiatry Clinic. Dr. Bushra Zahoor, Gold Medalist MBBS and expert psychiatrist, offers comprehensive mental health care in Delhi NCR. Let's talk, let's heal." />
-        <meta name="keywords" content="Dr. Bushra Zahoor, psychiatrist Delhi, Mind Craft Neuro-Psychiatry Clinic, mental health, MBBS, MD Psychiatry, DNB Psychiatry, Delhi NCR" />
-      </Helmet>
+     <SEOHelmet />
       <main className="flex-grow px-6 py-8">
 
         {/* home hero section */}

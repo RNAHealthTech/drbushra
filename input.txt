@@ -4,6 +4,32 @@ Mind Craft Neuro-Psychiatry Clinic, Gold Medalist MBBS
 
 Position: Assistant Professor, Department of Psychiatry
 Qualifications: MBBS, MD (Psychiatry), DNB (Psychiatry)
-
 Email: bushra.zhro7oqmail.com
+
+services : Bipolar Disorder, Depression, Anxiety, Counselling, Psychotherapy, Psychosis, Disorder, Migraine, Relationship Issues
+
+locations : 
+
+```
+Nizzamundin, 
+Nizzamundin East,  
+Jagnpura, 
+Aliganj, 
+Khan Market, 
+South Delhi, 
+Lajapt Nagar, 
+Taimour Nagar, 
+South West Delhi, 
+Delhi NCR
+
+```
+
 Address : Delhi, Nizzamundin, North Delhi, West Delhi , Delhi NCR
+
+ <meta name="keywords" content="Dr. Bushra Zahoor, Psychiatrist in Delhi, headache treatment, migraine specialist, anger management therapy, stress management, anxiety treatment, depression specialist, bipolar disorder treatment, psychosis treatment, child and adolescent guidance, addiction therapy, technology addiction, lifestyle issues, relationship counseling, psychotherapy, Nizzamundin, South Delhi, Delhi NCR" />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content="Best Psychiatrist in Delhi NCR - Dr. Bushra Zahoor" />
+      <meta property="og:description" content="Offering specialized care in treating anxiety, depression, bipolar disorder, stress management, and addiction disorders at Mind Craft Clinic, South Delhi." />
+      <meta property="og:location" content="Nizzamundin, Delhi NCR" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://mindcraftclinic.com" />

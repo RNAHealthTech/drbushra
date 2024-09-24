@@ -16,12 +16,12 @@ const App: React.FC = () => {
      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/jagnpura' element={<Home />} />
-          <Route path='/aliganj' element={<Home />} />
-          <Route path='/khan-market' element={<Home />} />
-          <Route path='/nizzamudin-east' element={<Home />} />
-          <Route path='/lajpat-nagar' element={<Home />} />
-          <Route path='/taimour-nagar' element={<Home />} />
+          <Route path='/best-psychiatrist-in-nizzamundin' element={<Home />} />
+          <Route path='/expert-psychiatrist-south-delhi' element={<Home />} />
+          <Route path='/best-mental-health-doctor-delhi-ncr' element={<Home />} />
+          <Route path='/top-psychologist-in-nizzamudin-east' element={<Home />} />
+          <Route path='/leading-psychiatrist-lajpat-nagar' element={<Home />} />
+          <Route path='/best-psychiatrist-in-khan-market' element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path='/services/:serviceId' Component={ServiceTemplatePage} />
