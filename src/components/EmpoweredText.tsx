@@ -15,7 +15,7 @@ const EmpowermentText: React.FC = () => (
     
     <div className="space-y-4 text-gray-700">
       <p className="leading-relaxed text-sm sm:text-base">
-        <span className="font-semibold text-pink-500">Dr. Bushra Zahoor</span> stands as a beacon of hope and strength for women in our community. As a dedicated psychologist, she has made it her mission to uplift and empower women, especially in the face of societal repression and cultural barriers.
+        <span className="font-semibold text-pink-500">Dr. Bushra Zahoor</span> stands as a beacon of hope and strength for women in our community. As a dedicated psychiatrist, she has made it her mission to uplift and empower women, especially in the face of societal repression and cultural barriers.
       </p>
       
       <p className="leading-relaxed text-sm sm:text-base">
