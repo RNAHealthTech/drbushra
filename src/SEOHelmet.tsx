@@ -9,35 +9,35 @@ const seoContent: { [key: string]: { title: string; description: string; keyword
         keywords: "psychiatrist Delhi NCR, depression specialist, anxiety treatment, bipolar disorder, addiction therapy, Dr. Bushra Zahoor, Mind Craft Clinic"
     },
     '/best-psychiatrist-in-nizzamundin': {
-        title: "Top Psychiatrist in Nizzamundin | Dr. Bushra Zahoor - Mental Health Expert",
-        description: "Seeking a psychiatrist in Nizzamundin? Dr. Bushra Zahoor offers expert care for depression, anxiety, and relationship issues. Advanced treatments, personalized approach at Mind Craft Clinic.",
-        keywords: "psychiatrist Nizzamundin, depression treatment Nizzamundin, anxiety specialist near me, Dr. Bushra Zahoor, relationship counseling"
+        title: "Dr. Bushra Zahoor - Top Psychiatrist in Nizamuddin, Delhi | Mind Craft Clinic",
+        description: "Expert mental health care in Nizamuddin by Dr. Bushra Zahoor. Specialized treatments for depression, anxiety, bipolar disorder, and more. Call +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, psychiatrist in Nizamuddin, depression treatment, anxiety management, bipolar disorder, relationship counseling, Delhi NCR"
     },
     '/expert-psychiatrist-south-delhi': {
-        title: "Expert Psychiatrist in South Delhi - Dr. Bushra Zahoor",
-        description: "Dr. Bushra Zahoor brings world-class psychiatric care to South Delhi. Specializing in stress management, psychotherapy, and addiction treatment. Schedule your visit now at Mind Craft Clinic.",
-        keywords: "psychiatrist South Delhi, stress management expert, psychotherapy specialist, Dr. Bushra Zahoor, addiction treatment South Delhi"
+        title: "Dr. Bushra Zahoor - Expert Psychiatrist in South Delhi | Mind Craft Clinic",
+        description: "Top-rated psychiatric care in South Delhi by Dr. Bushra Zahoor. Specialized treatments for depression, anxiety, bipolar disorder, and more at Mind Craft Neuro-Psychiatry Clinic. Call +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, psychiatrist in South Delhi, Mind Craft Clinic, depression treatment, anxiety disorders, bipolar disorder, psychotherapy, relationship counseling, Nizamuddin"
     },
     '/best-mental-health-doctor-delhi-ncr': {
-        title: "Best Mental Health Doctor in Delhi NCR | Dr. Bushra Zahoor",
-        description: "Access top-tier psychiatric treatments with Dr. Bushra Zahoor in Delhi NCR. Specialized care for bipolar disorder, psychosis, and child & adolescent guidance at Mind Craft Clinic.",
-        keywords: "mental health doctor Delhi NCR, bipolar disorder treatment, psychosis specialist, Dr. Bushra Zahoor, child psychiatrist Delhi"
+        title: "Dr. Bushra Zahoor - Best Mental Health Doctor in Delhi NCR | Mind Craft Clinic",
+        description: "Comprehensive mental health care across Delhi NCR by Dr. Bushra Zahoor. Expert treatment for depression, anxiety, bipolar disorder, and more. Contact +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, mental health doctor Delhi NCR, psychiatrist, depression treatment, anxiety management, bipolar disorder, psychosis, child psychiatry"
     },
     '/leading-psychiatrist-lajpat-nagar': {
-        title: "Leading Psychiatrist for Lajpat Nagar | Dr. Bushra Zahoor",
-        description: "Dr. Bushra Zahoor offers advanced psychiatric solutions in Lajpat Nagar. Expert in treating complex mental health disorders, relationship issues, and lifestyle problems. Consult today for personalized care.",
-        keywords: "psychiatrist Lajpat Nagar, relationship counseling, lifestyle issues treatment, Dr. Bushra Zahoor, mental health specialist Lajpat Nagar"
+        title: "Dr. Bushra Zahoor - Leading Psychiatrist in Lajpat Nagar, Delhi | Mind Craft Clinic",
+        description: "Advanced psychiatric solutions in Lajpat Nagar by Dr. Bushra Zahoor. Expert treatment for depression, anxiety, and complex mental health disorders. Contact +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, psychiatrist in Lajpat Nagar, depression treatment, anxiety management, relationship counseling, addiction therapy, Delhi NCR"
     },
     '/best-psychiatrist-in-khan-market': {
-        title: "Best Psychiatrist in Khan Market - Dr. Bushra Zahoor",
-        description: "Trust Dr. Bushra Zahoor for exceptional psychiatric care in Khan Market. Specializing in depression, anxiety, and technology addiction treatment at Mind Craft Neuro-Psychiatry Clinic.",
-        keywords: "psychiatrist Khan Market, depression treatment, anxiety specialist Khan Market, Dr. Bushra Zahoor, technology addiction therapy"
+        title: "Dr. Bushra Zahoor - Best Psychiatrist in Khan Market, Delhi | Mind Craft Clinic",
+        description: "Expert psychiatric care in Khan Market by Dr. Bushra Zahoor. Specialized treatments for depression, anxiety, and work-related stress. Call +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, psychiatrist in Khan Market, depression treatment, anxiety management, work-life balance, stress management, Delhi NCR"
     },
-    '/top-psychologist-in-nizzamudin-east': {
-        title: "Top psychologist in Nizzamuin - Dr. Bushra Zahoor",
-        description: "Trust Dr. Bushra Zahoor for exceptional psychiatric care in Nizzamudin. Specializing in depression, anxiety, and technology addiction treatment at Mind Craft Neuro-Psychiatry Clinic.",
-        keywords: "psychiatrist nizzamudin, depression treatment, anxiety specialist Khan Market, Dr. Bushra Zahoor, technology addiction therapy"
-    },  
+    '/top-psychologist-in-green-park': {
+        title: "Dr. Bushra Zahoor - Top Psychiatrist & Psychologist in Green Park, Delhi",
+        description: "Expert psychiatric care in Green Park by Dr. Bushra Zahoor. Specialized treatments for depression, anxiety, bipolar disorder, and more. Contact +91-9310330922 for appointments.",
+        keywords: "Dr. Bushra Zahoor, psychiatrist in Green Park, psychologist in Delhi, depression treatment, anxiety disorders, bipolar disorder, psychotherapy, stress management, relationship counseling"
+    },
 };
 
 const SEOHelmet: React.FC = () => {
