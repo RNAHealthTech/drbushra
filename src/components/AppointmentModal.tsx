@@ -10,7 +10,6 @@ interface AppointmentModalProps {
 
 const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) => {
   const [state, handleSubmit] = useForm('mnnavbrr');
-  const [useWhatsApp, setUseWhatsApp] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -53,9 +52,8 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
   const handleFinalSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     handleSubmit(formData);
-    if (useWhatsApp) {
-      sendWhatsAppMessage();
-    }
+    sendWhatsAppMessage();
+    
   };
 
   const sendWhatsAppMessage = () => {
@@ -65,7 +63,7 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
     Email: ${formData.email}
     Appointment: ${formData.appointmentType}
     Date: ${formData.date}
-    Text: ${formData.text}`;
+    Message: ${formData.text}`;
 
     const whatsappNumber = '919310330922'; 
     const encodedMessage = encodeURIComponent(message);
@@ -142,24 +140,12 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose }) 
                     <label htmlFor="message" className="block text-sm font-medium text-foreground">Message</label>
                     <textarea id="message" name="message" rows={4} className="mt-1 block w-full border border-new rounded-md shadow-sm p-2 bg-background text-foreground"></textarea>
                   </div>
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      id="whatsapp"
-                      name="whatsapp"
-                      checked={useWhatsApp}
-                      onChange={(e) => setUseWhatsApp(e.target.checked)}
-                      className="h-4 w-4 text-new focus:ring-new border-new rounded"
-                    />
-                    <label htmlFor="whatsapp" className="ml-2 block text-sm text-foreground">
-                      Contact me via WhatsApp
-                    </label>
-                  </div>
+                  
                   <div className="flex justify-end space-x-2 sticky bottom-0 bg-peacher pt-4">
                     <button type="button" onClick={onClose} className="px-4 py-2 border border-new rounded-md text-sm font-medium text-foreground hover:bg-cardish transition-colors duration-300">
                       Cancel
                     </button>
-                    <button type="submit" className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-foreground bg-buttonish hover:bg-new hover:text-background transition-colors duration-300">
+                    <button type="submit" className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-foreground bg-buttonish transition-colors duration-300">
                       Book Appointment
                     </button>
                   </div>
