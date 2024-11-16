@@ -11,6 +11,7 @@ import ImageCarousel from '../components/ImageCarousel';
 import VimeoEmbed from '../components/VideoEmbed';
 import SEOHelmet from '../SEOHelmet';
 import OnlineModal from '../components/OnlineModal';
+import MediaGallerySection from '../components/MediaGallerySection';
 
 type CardKey = 'mentalHealth' | 'addiction' | 'migraine';
 
@@ -458,6 +459,8 @@ const Home: React.FC = () => {
         {/*  home services  */}
 
         <ServicesPreview />
+
+        <MediaGallerySection />
 
         {/* patients testimonials */}
 

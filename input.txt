@@ -1,6 +1,8 @@
 Dr. Bushra Zahoor
 Mind Craft Neuro-Psychiatry Clinic, Gold Medalist MBBS 
 
+tech : react-typescript-tailwind
+
 Email: bushra.zhro7oqmail.com
 Contact : +91-9310330922
 
@@ -23,3 +25,4 @@ Delhi NCR
 ```
 
 Address : Mind Craft Clinic
+
