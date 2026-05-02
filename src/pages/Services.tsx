@@ -104,7 +104,7 @@ const Services: React.FC = () => {
         <>
             <Helmet>
                 <title>Mental Health Services | Dr. Bushra Zahoor's Specialties</title>
-                <meta name="description" content="Comprehensive mental health services by Dr. Bushra Zahoor. Specializing in women's mental health, child and adolescent care, anxiety, depression, and more at Mind Craft Neuro-Psychiatry Clinic." />
+                <meta name="description" content="Comprehensive mental health services by Dr. Bushra Zahoor. Specializing in women's mental health, child and adolescent care, anxiety, depression, and more at Asiaz Hospital." />
                 <meta name="keywords" content="mental health services, women's mental health, child psychiatry, adolescent mental health, anxiety, depression, psychosis, counseling, psychotherapy, Dr. Bushra Zahoor" />
             </Helmet>
             <main className="flex-grow px-6 py-8">

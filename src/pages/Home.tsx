@@ -498,7 +498,7 @@ const Home: React.FC = () => {
                 </motion.div>
                 <motion.div variants={itemVariants}>
                   <FAQItem question="How can I schedule an appointment with Dr. Zahoor?">
-                    You can contact Dr. Zahoor at 9717288672. Her clinic timings are from 6-8pm. The clinic is located at E-20, basement, Nizamuddin West, New Delhi- 110013.
+                    You can contact Dr. Zahoor at 9717288672. Her clinic timings are 6-9 pm for weekdays and 11 am to 6 pm on weekends. The clinic is located at Asiaz Hospital, Sector 15 Part 2, Gurugram, Haryana - 122001. Consultation charges are ₹1500.
                   </FAQItem>
                 </motion.div>
               </motion.div>

@@ -8,7 +8,7 @@ const LeadingPsychiatristLajpatNagar: React.FC = () => {
       <h1 className="text-4xl font-bold mb-6">Dr. Bushra Zahoor - Leading Psychiatrist in Lajpat Nagar, Delhi</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Advanced Psychiatric Solutions for Lajpat Nagar</h2>
-        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and renowned psychiatrist, extends her expertise to Lajpat Nagar through Mind Craft Neuro-Psychiatry Clinic. Known for her compassionate care and innovative approaches, she is the go-to psychiatrist for residents of Lajpat Nagar and surrounding areas in South Delhi.</p>
+        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and renowned psychiatrist, extends her expertise to Lajpat Nagar through Asiaz Hospital. Known for her compassionate care and innovative approaches, she is the go-to psychiatrist for residents of Lajpat Nagar and surrounding areas in South Delhi.</p>
       </section>
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-4">Comprehensive Psychiatric Services:</h3>
@@ -46,7 +46,7 @@ const LeadingPsychiatristLajpatNagar: React.FC = () => {
         <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
         <p>Phone: +91-9310330922</p>
         <p>Email: bushra.zhro7@gmail.com</p>
-        <p>Address: E-20, basement, Block E, Nizamuddin West, New Delhi, Delhi 110013</p>
+        <p>Address: Plot No. 140, Sector 15 Part 2, Near Mother Dairy, Gurugram, Haryana - 122001</p>
         <p>(Easily accessible from Lajpat Nagar)</p>
         <p className="mt-4">Take the first step towards improved mental health. Consult with Dr. Bushra Zahoor, the leading psychiatrist serving Lajpat Nagar and nearby areas in Delhi NCR!</p>
       </section>

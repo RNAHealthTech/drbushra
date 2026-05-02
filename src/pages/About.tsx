@@ -28,8 +28,8 @@ const About: React.FC = () => {
         <>
             <Helmet>
                 <title>About Dr. Bushra Zahoor | Gold Medalist MBBS, Psychiatrist</title>
-                <meta name="description" content="Learn about Dr. Bushra Zahoor, a Gold Medalist MBBS and Assistant Professor of Psychiatry. Expertise in MBBS, MD (Psychiatry), and DNB (Psychiatry) at Mind Craft Neuro-Psychiatry Clinic." />
-                <meta name="keywords" content="Dr. Bushra Zahoor, psychiatrist, Gold Medalist MBBS, MD Psychiatry, DNB Psychiatry, Assistant Professor, Mind Craft Neuro-Psychiatry Clinic" />
+                <meta name="description" content="Learn about Dr. Bushra Zahoor, a Gold Medalist MBBS and Assistant Professor of Psychiatry. Expertise in MBBS, MD (Psychiatry), and DNB (Psychiatry) at Asiaz Hospital." />
+                <meta name="keywords" content="Dr. Bushra Zahoor, psychiatrist, Gold Medalist MBBS, MD Psychiatry, DNB Psychiatry, Assistant Professor, Asiaz Hospital" />
             </Helmet>
             <main className="flex-grow px-6 py-12 rounded-lg">
                 <section className="max-w-7xl mx-auto">
@@ -68,7 +68,7 @@ const About: React.FC = () => {
                                         />
                                         <ImageWithOverlay 
                                             src="/images/doctor-3.jpg" 
-                                            alt="Mind Craft Neuro-Psychiatry Clinic" 
+                                            alt="Asiaz Hospital" 
                                             caption="2024, International Psychiatrist Society of Asia, Asia Pacific" 
                                         />
                                     </div>
@@ -78,7 +78,7 @@ const About: React.FC = () => {
                                             <p className="text-lg leading-relaxed">
                                                 Dr. Bushra Zahoor is a dedicated psychiatrist currently serving as an Assistant Professor
                                                 in the Department of Psychiatry at <span className="text-xl text-[#6D563D] bg-peachy px-1 rounded font-semibold">Hamdard Institute of Medical Sciences and Research (HIMSR)</span>, New Delhi.
-                                                She is also the founder of Mind Craft Neuro-Psychiatry Clinic.
+                                                She is currently practicing at Asiaz Hospital.
                                             </p>
                                         </div>
                                         <div className="bg-new p-6 rounded-lg shadow-md">
@@ -112,7 +112,7 @@ const About: React.FC = () => {
                                     <InViewWrapper>
                                         <div className="flex items-center gap-4 font-work-sans-slab bg-peachy p-4 rounded-lg shadow-md">
                                             <p className="text-[#6D563D] text-lg font-semibold">
-                                                📍 Mind Craft Neuro-Psychiatry Clinic
+                                                📍 Asiaz Hospital
                                             </p>
                                             <img
                                                 src="https://flagcdn.com/w40/in.png"
@@ -120,7 +120,7 @@ const About: React.FC = () => {
                                                 className="w-8 h-auto"
                                             />
                                             <span className="text-lg text-[#6D563D] font-semibold">
-                                                Delhi, India
+                                                Gurugram, Haryana
                                             </span>
                                         </div>
                                     </InViewWrapper>
@@ -151,7 +151,7 @@ const About: React.FC = () => {
                                 />
                                 <ImageWithOverlay 
                                     src="/images/doctor-3.jpg" 
-                                    alt="Mind Craft Neuro-Psychiatry Clinic" 
+                                    alt="Asiaz Hospital" 
                                     caption="2024, International Psychiatrist Society of Asia, Asia Pacific, SAARC" 
                                 />
                             </div>

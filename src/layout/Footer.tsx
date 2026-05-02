@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             <motion.div className={`${isMobile ? 'flex-shrink-0' : ''}`}>
               <h3 className="font-fraunces text-2xl mb-4">Dr. Bushra Zahoor</h3>
               <p className="font-work-sans-slab text-sm mb-4">MBBS(Gold Medalist), MD, DNB, Psychiatry</p>
-              <p className="font-work-sans-slab text-sm mb-4">Mind Craft Neuro-Psychiatry Clinic</p>
+              <p className="font-work-sans-slab text-sm mb-4">Asiaz Hospital</p>
             </motion.div>
 
             <motion.div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isMobile ? 'flex-grow overflow-y-auto' : ''}`}>
@@ -50,17 +50,16 @@ const Footer: React.FC = () => {
 
               <motion.div className="space-y-4">
                 <h3 className="font-fraunces text-xl mb-4">Address</h3>
-                <p className="font-work-sans-slab text-sm">E-20, basement, Block E,</p>
-                <p className="font-work-sans-slab text-sm">Nizamuddin West, New Delhi,</p>
-                <p className="font-work-sans-slab text-sm">Delhi 110013</p>
+                <p className="font-work-sans-slab text-sm">Plot No. 140, Sector 15 Part 2,</p>
+                <p className="font-work-sans-slab text-sm">Near Mother Dairy,</p>
+                <p className="font-work-sans-slab text-sm">Gurugram, Haryana - 122001</p>
               </motion.div>
 
               <motion.div className="space-y-4">
-                <h3 className="font-fraunces text-accent text-xl mb-4">Clinic Hours</h3>
-                <p className="font-work-sans-slab text-sm">Mon, Tue, Wed, Fri: 6–9 pm</p>
-                <p className="font-work-sans-slab text-sm">Thu: 6–9 pm (Hours might differ)</p>
-                <p className="font-work-sans-slab text-sm">Sat: 6–9 pm</p>
-                <p className="font-work-sans-slab text-sm">Sun: 11 am–2 pm</p>
+                <h3 className="font-fraunces text-accent text-xl mb-4">Clinic Hours & Fees</h3>
+                <p className="font-work-sans-slab text-sm">Mon - Fri: 6:00 PM – 9:00 PM</p>
+                <p className="font-work-sans-slab text-sm">Sat - Sun: 11:00 AM – 6:00 PM</p>
+                <p className="font-work-sans-slab text-sm mt-2 font-bold">Consultation Charges: ₹1500</p>
               </motion.div>
 
               <motion.div className="space-y-4">

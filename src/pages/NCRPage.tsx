@@ -8,7 +8,7 @@ const BestMentalHealthDoctorDelhiNCR: React.FC = () => {
       <h1 className="text-4xl font-bold mb-6">Dr. Bushra Zahoor - Best Mental Health Doctor in Delhi NCR</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Comprehensive Mental Health Care Across Delhi NCR</h2>
-        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS, is recognized as one of the best mental health doctors in Delhi NCR. Her expertise at Mind Craft Neuro-Psychiatry Clinic covers a wide range of psychiatric conditions, providing hope and healing to patients across the region, including South Delhi, North Delhi, West Delhi, Gurgaon, Noida, and Faridabad.</p>
+        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS, is recognized as one of the best mental health doctors in Delhi NCR. Her expertise at Asiaz Hospital covers a wide range of psychiatric conditions, providing hope and healing to patients across the region, including South Delhi, North Delhi, West Delhi, Gurgaon, Noida, and Faridabad.</p>
       </section>
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-4">Specialized Services:</h3>
@@ -34,7 +34,7 @@ const BestMentalHealthDoctorDelhiNCR: React.FC = () => {
           <li>Extensive experience in complex psychiatric cases</li>
           <li>Integrative and holistic approach to mental health</li>
           <li>Personalized treatment plans for each patient</li>
-          <li>State-of-the-art facilities at Mind Craft Neuro-Psychiatry Clinic</li>
+          <li>State-of-the-art facilities at Asiaz Hospital</li>
           <li>Expertise in urban lifestyle-related mental health issues</li>
         </ul>
       </section>
@@ -44,7 +44,7 @@ const BestMentalHealthDoctorDelhiNCR: React.FC = () => {
         <h4 className="text-lg font-semibold mt-4 mb-2">Contact Information:</h4>
         <p>Phone: +91-9310330922</p>
         <p>Email: bushra.zhro7@gmail.com</p>
-        <p>Main Clinic: E-20, basement, Block E, Nizamuddin West, New Delhi, Delhi 110013</p>
+        <p>Main Clinic: Plot No. 140, Sector 15 Part 2, Near Mother Dairy, Gurugram, Haryana - 122001</p>
         <p className="mt-4">Take the first step towards better mental health. Consult with Dr. Bushra Zahoor, the best mental health doctor in Delhi NCR!</p>
       </section>
     </div>

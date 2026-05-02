@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
   }, [])
 
 
-  const position: [number, number] = [28.589456190439, 77.24568595637429];
+  const position: [number, number] = [28.4600, 77.0400];
   const mapRef = useRef<HTMLDivElement>(null);
 
 
@@ -64,9 +64,9 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Dr. Bushra Zahoor | Mind Craft Neuro-Psychiatry Clinic</title>
-        <meta name="description" content="Get in touch with Dr. Bushra Zahoor, a highly qualified psychiatrist in Delhi. Schedule appointments at Mind Craft Neuro-Psychiatry Clinic in Nizamuddin, Delhi NCR." />
-        <meta name="keywords" content="Dr. Bushra Zahoor, contact, appointment, psychiatrist Delhi, Mind Craft Neuro-Psychiatry Clinic, Nizamuddin, Delhi NCR" />
+        <title>Contact Dr. Bushra Zahoor | Asiaz Hospital</title>
+        <meta name="description" content="Get in touch with Dr. Bushra Zahoor, a highly qualified psychiatrist. Schedule appointments at Asiaz Hospital in Gurugram, Haryana." />
+        <meta name="keywords" content="Dr. Bushra Zahoor, contact, appointment, psychiatrist Delhi, Asiaz Hospital, Gurugram, Haryana" />
       </Helmet>
 
       <main className="flex-grow px-6 py-8">
@@ -126,8 +126,7 @@ const Contact: React.FC = () => {
               <ContactItem
                 icon={<FaMapMarkerAlt className="text-blue-500" />}
                 title="Address"
-                content="E-20, basement, Block E,
-                            Nizamuddin West, New Delhi, Delhi-110013"
+                content="Plot No. 140, Sector 15 Part 2, Near Mother Dairy, Gurugram, Haryana - 122001"
                 gradientClass="from-cardish to-peacher"
                 action={scrollToMap}
               />
@@ -296,7 +295,7 @@ const Contact: React.FC = () => {
                 />
                 <Marker position={position} icon={customIcon}>
                   <Popup>
-                    Mindcraft Neuro-Psychiatry Clinic
+                    Asiaz Hospital
                   </Popup>
                 </Marker>
               </MapContainer>

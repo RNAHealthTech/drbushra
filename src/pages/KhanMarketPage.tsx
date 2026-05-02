@@ -8,7 +8,7 @@ const BestPsychiatristKhanMarket: React.FC = () => {
       <h1 className="text-4xl font-bold mb-6">Dr. Bushra Zahoor - Best Psychiatrist in Khan Market, Delhi</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Exceptional Psychiatric Care Near Khan Market</h2>
-        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and renowned psychiatrist, offers her expertise near Khan Market at Mind Craft Neuro-Psychiatry Clinic. Her approach combines medical excellence with a deep understanding of the unique stressors faced by urban professionals and residents in this bustling area of Delhi.</p>
+        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and renowned psychiatrist, offers her expertise near Khan Market at Asiaz Hospital. Her approach combines medical excellence with a deep understanding of the unique stressors faced by urban professionals and residents in this bustling area of Delhi.</p>
       </section>
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-4">Comprehensive Psychiatric Services:</h3>
@@ -28,7 +28,7 @@ const BestPsychiatristKhanMarket: React.FC = () => {
           <li>Convenient location for professionals and residents</li>
           <li>Tailored treatment plans for high-pressure urban lifestyles</li>
           <li>Expert in managing complex mental health challenges</li>
-          <li>State-of-the-art facilities at Mind Craft Clinic</li>
+          <li>State-of-the-art facilities at Asiaz Hospital</li>
           <li>Holistic approach to mental wellbeing</li>
         </ul>
       </section>
@@ -46,7 +46,7 @@ const BestPsychiatristKhanMarket: React.FC = () => {
         <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
         <p>Phone: +91-9310330922</p>
         <p>Email: bushra.zhro7@gmail.com</p>
-        <p>Address: E-20, basement, Block E, Nizamuddin West, New Delhi, Delhi 110013</p>
+        <p>Address: Plot No. 140, Sector 15 Part 2, Near Mother Dairy, Gurugram, Haryana - 122001</p>
         <p>(Conveniently located near Khan Market)</p>
         <p className="mt-4">Experience top-tier psychiatric care near Khan Market. Schedule your consultation with Dr. Bushra Zahoor today and take the first step towards better mental health!</p>
       </section>

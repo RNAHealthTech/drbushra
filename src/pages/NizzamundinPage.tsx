@@ -10,7 +10,7 @@ const BestPsychiatristNizzamundin: React.FC = () => {
       <h1 className="text-4xl font-bold mb-6">Dr. Bushra Zahoor - Top Psychiatrist in Nizamuddin, Delhi</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Expert Mental Health Care in Nizamuddin</h2>
-        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and leading psychiatrist in Nizamuddin, offers specialized care for a wide range of mental health conditions at Mind Craft Neuro-Psychiatry Clinic. With her expertise and compassionate approach, she has become the go-to mental health expert in Nizamuddin and surrounding areas of Delhi.</p>
+        <p className="mb-4">Dr. Bushra Zahoor, a gold medalist MBBS and leading psychiatrist in Nizamuddin, offers specialized care for a wide range of mental health conditions at Asiaz Hospital. With her expertise and compassionate approach, she has become the go-to mental health expert in Nizamuddin and surrounding areas of Delhi.</p>
       </section>
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-4">Comprehensive Psychiatric Services:</h3>
@@ -32,7 +32,7 @@ const BestPsychiatristNizzamundin: React.FC = () => {
           <li>DNB in Psychiatry</li>
           <li>Assistant Professor, Department of Psychiatry</li>
           <li>Personalized treatment plans tailored to individual needs</li>
-          <li>State-of-the-art facilities at Mind Craft Neuro-Psychiatry Clinic</li>
+          <li>State-of-the-art facilities at Asiaz Hospital</li>
           <li>Holistic approach to mental health and well-being</li>
           <li>Expertise in addressing urban lifestyle-related mental health issues</li>
         </ul>
@@ -41,7 +41,7 @@ const BestPsychiatristNizzamundin: React.FC = () => {
         <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
         <p>Phone: +91-9310330922</p>
         <p>Email: bushra.zhro7@gmail.com</p>
-        <p>Address: E-20, basement, Block E, Nizamuddin West, New Delhi, Delhi 110013</p>
+        <p>Address: Plot No. 140, Sector 15 Part 2, Near Mother Dairy, Gurugram, Haryana - 122001</p>
         <p className="mt-4">Book your consultation today with Dr. Bushra Zahoor, the top psychiatrist in Nizamuddin, and take the first step towards better mental health!</p>
       </section>
     </div>
